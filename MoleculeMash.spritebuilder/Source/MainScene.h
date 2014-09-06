@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface MainScene : CCNode
+@property
 
 @end
