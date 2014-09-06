@@ -16,7 +16,6 @@
     BOOL paused;
     
     
-    
     int _totalNumberOfObjectives;
     int _currentObjectiveNumber;
     NSMutableArray *_objectiveFirstAtom;
@@ -43,7 +42,6 @@
 -(void) cycleNextObjective
 {
     _currentObjectiveNumber++;
-    
 }
 
 -(void)pause
@@ -95,4 +93,5 @@
     
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
 }
+
 @end

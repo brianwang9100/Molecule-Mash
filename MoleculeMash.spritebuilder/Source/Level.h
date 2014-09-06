@@ -12,6 +12,16 @@
 @interface Level : CCScene <CCPhysicsCollisionDelegate>
 @property (assign, nonatomic) int levelNumber;
 @property (strong, nonatomic) Atom *currentAtom;
+@property (strong, nonatomic) CCPhysicsNode *physicsNode;
+@property (strong, nonatomic) CCNode *pauseScene;
+@property (strong, nonatomic) CCNode *mainPauseButton;
+@property (assign, nonatomic) BOOL paused;
+
+@property (assign, nonatomic) int totalNumberOfObjectives;
+@property (assign, nonatomic) int currentObjectiveNumber;
+@property (strong, nonatomic) NSMutableArray *objectiveFirstAtom;
+@property (strong, nonatomic) NSMutableArray *objectiveFinalMolecule;
 
 -(void) didLoadFromCCB;
+-(void) update:(CCTime)delta;
 @end
