@@ -1851,6 +1851,8 @@
 												</array>
 											</dict>
 										</array>
+										<key>selected</key>
+										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -5642,7 +5644,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>LevelSelect</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

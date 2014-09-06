@@ -1277,7 +1277,7 @@
 								<string>String</string>
 								<key>value</key>
 								<array>
-									<string>TRASH</string>
+									<string>PAUSE</string>
 									<false/>
 								</array>
 							</dict>
@@ -1487,6 +1487,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -2211,8 +2213,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

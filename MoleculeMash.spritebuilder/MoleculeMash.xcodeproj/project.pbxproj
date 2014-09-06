@@ -40,7 +40,6 @@
 		D099809219BAD227006E4873 /* startScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D099809119BAD227006E4873 /* startScene.m */; };
 		DFF5E4D119BAD59D003353AB /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D019BAD59D003353AB /* Atom.m */; };
 		DFF5E4D319BAD6A3003353AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFF5E4D219BAD6A3003353AB /* README.md */; };
-		DFF5E4D819BAE884003353AB /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D719BAE884003353AB /* Level.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +101,6 @@
 		DFF5E4CF19BAD59D003353AB /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DFF5E4D019BAD59D003353AB /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		DFF5E4D219BAD6A3003353AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DFF5E4D619BAE884003353AB /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
-		DFF5E4D719BAE884003353AB /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +241,6 @@
 		DFF5E4D919BAE892003353AB /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				DFF5E4D619BAE884003353AB /* Level.h */,
-				DFF5E4D719BAE884003353AB /* Level.m */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -372,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFF5E4D819BAE884003353AB /* Level.m in Sources */,
 				05A6DFF719BAE01B002539D7 /* LevelSelect.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
