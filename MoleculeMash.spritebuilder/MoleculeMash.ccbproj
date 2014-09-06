@@ -78,8 +78,6 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
-		<key>Sprites</key>
-		<dict/>
 		<key>Sprites/atom.png</key>
 		<dict>
 			<key>scaleFrom</key>
