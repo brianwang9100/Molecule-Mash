@@ -12,7 +12,7 @@
 
 
 -(void) play {
-    CCScene *mainScene = [CCBReader loadAsScene:@"LevelSelect"];
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }

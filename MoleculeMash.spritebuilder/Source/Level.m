@@ -17,12 +17,9 @@
     BOOL paused;
 }
 
--(void) onEnter
-{
-    
-}
 
--(void) pause
+
+-(void)pause
 {
     if(self.paused)
     {
@@ -46,5 +43,30 @@
         _pauseScene.position = ccp(0.5f,0.5f);
         [self addChild:_pauseScene];
     }
+}
+
+
+-(void) restart {
+    if (self.paused) {
+        
+        self.paused = FALSE;
+        
+        [[CCDirector sharedDirector] resume];
+        
+        [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"MainScene"]];
+        
+    }
+}
+
+-(void) quit {
+    if (self.paused) {
+        
+        self.paused = FALSE;
+
+        [[CCDirector sharedDirector] resume];
+    }
+    
+    
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
 }
 @end
