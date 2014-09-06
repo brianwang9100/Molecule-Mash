@@ -50,6 +50,18 @@
 		DFEA4F7219BB1D9200E70619 /* Level8.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F7119BB1D9200E70619 /* Level8.m */; };
 		DFEA4F7519BB1D9B00E70619 /* Level9.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F7419BB1D9B00E70619 /* Level9.m */; };
 		DFEA4F7819BB1DA400E70619 /* Level10.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F7719BB1DA400E70619 /* Level10.m */; };
+		DFEA4F9619BBA63C00E70619 /* Hydrogen.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F9519BBA63C00E70619 /* Hydrogen.m */; };
+		DFEA4F9919BBA6F800E70619 /* Oxygen.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F9819BBA6F800E70619 /* Oxygen.m */; };
+		DFEA4F9C19BBA70C00E70619 /* Boron.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F9B19BBA70C00E70619 /* Boron.m */; };
+		DFEA4F9F19BBA71700E70619 /* Bromine.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F9E19BBA71700E70619 /* Bromine.m */; };
+		DFEA4FA219BBA76000E70619 /* Chlorine.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FA119BBA76000E70619 /* Chlorine.m */; };
+		DFEA4FA519BBA76B00E70619 /* Carbon.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FA419BBA76B00E70619 /* Carbon.m */; };
+		DFEA4FA819BBA78200E70619 /* Potassium.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FA719BBA78200E70619 /* Potassium.m */; };
+		DFEA4FAB19BBA78E00E70619 /* Sodium.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FAA19BBA78E00E70619 /* Sodium.m */; };
+		DFEA4FAE19BBA79A00E70619 /* Nitrogen.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FAD19BBA79A00E70619 /* Nitrogen.m */; };
+		DFEA4FB119BBA7A900E70619 /* Rubodium.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FB019BBA7A900E70619 /* Rubodium.m */; };
+		DFEA4FB419BBA7BE00E70619 /* Fluorine.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FB319BBA7BE00E70619 /* Fluorine.m */; };
+		DFEA4FB719BBA7CA00E70619 /* Lithium.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FB619BBA7CA00E70619 /* Lithium.m */; };
 		DFF5E4D119BAD59D003353AB /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D019BAD59D003353AB /* Atom.m */; };
 		DFF5E4D319BAD6A3003353AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFF5E4D219BAD6A3003353AB /* README.md */; };
 /* End PBXBuildFile section */
@@ -133,6 +145,30 @@
 		DFEA4F7419BB1D9B00E70619 /* Level9.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level9.m; sourceTree = "<group>"; };
 		DFEA4F7619BB1DA400E70619 /* Level10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level10.h; sourceTree = "<group>"; };
 		DFEA4F7719BB1DA400E70619 /* Level10.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level10.m; sourceTree = "<group>"; };
+		DFEA4F9419BBA63C00E70619 /* Hydrogen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hydrogen.h; sourceTree = "<group>"; };
+		DFEA4F9519BBA63C00E70619 /* Hydrogen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hydrogen.m; sourceTree = "<group>"; };
+		DFEA4F9719BBA6F800E70619 /* Oxygen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oxygen.h; sourceTree = "<group>"; };
+		DFEA4F9819BBA6F800E70619 /* Oxygen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Oxygen.m; sourceTree = "<group>"; };
+		DFEA4F9A19BBA70C00E70619 /* Boron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boron.h; sourceTree = "<group>"; };
+		DFEA4F9B19BBA70C00E70619 /* Boron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boron.m; sourceTree = "<group>"; };
+		DFEA4F9D19BBA71700E70619 /* Bromine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bromine.h; sourceTree = "<group>"; };
+		DFEA4F9E19BBA71700E70619 /* Bromine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bromine.m; sourceTree = "<group>"; };
+		DFEA4FA019BBA76000E70619 /* Chlorine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chlorine.h; sourceTree = "<group>"; };
+		DFEA4FA119BBA76000E70619 /* Chlorine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chlorine.m; sourceTree = "<group>"; };
+		DFEA4FA319BBA76B00E70619 /* Carbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Carbon.h; sourceTree = "<group>"; };
+		DFEA4FA419BBA76B00E70619 /* Carbon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Carbon.m; sourceTree = "<group>"; };
+		DFEA4FA619BBA78200E70619 /* Potassium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Potassium.h; sourceTree = "<group>"; };
+		DFEA4FA719BBA78200E70619 /* Potassium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Potassium.m; sourceTree = "<group>"; };
+		DFEA4FA919BBA78E00E70619 /* Sodium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sodium.h; sourceTree = "<group>"; };
+		DFEA4FAA19BBA78E00E70619 /* Sodium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sodium.m; sourceTree = "<group>"; };
+		DFEA4FAC19BBA79A00E70619 /* Nitrogen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nitrogen.h; sourceTree = "<group>"; };
+		DFEA4FAD19BBA79A00E70619 /* Nitrogen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nitrogen.m; sourceTree = "<group>"; };
+		DFEA4FAF19BBA7A900E70619 /* Rubodium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rubodium.h; sourceTree = "<group>"; };
+		DFEA4FB019BBA7A900E70619 /* Rubodium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rubodium.m; sourceTree = "<group>"; };
+		DFEA4FB219BBA7BE00E70619 /* Fluorine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fluorine.h; sourceTree = "<group>"; };
+		DFEA4FB319BBA7BE00E70619 /* Fluorine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fluorine.m; sourceTree = "<group>"; };
+		DFEA4FB519BBA7CA00E70619 /* Lithium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lithium.h; sourceTree = "<group>"; };
+		DFEA4FB619BBA7CA00E70619 /* Lithium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lithium.m; sourceTree = "<group>"; };
 		DFF5E4CF19BAD59D003353AB /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DFF5E4D019BAD59D003353AB /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		DFF5E4D219BAD6A3003353AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -182,6 +218,7 @@
 				05A6DFF619BAE01B002539D7 /* LevelSelect.m */,
 				D0C5E26519BB5FAE00567E12 /* LevelBasics.h */,
 				D0C5E26619BB5FAE00567E12 /* LevelBasics.m */,
+				DFEA4F9219BBA61000E70619 /* Elements */,
 				DFF5E4D919BAE892003353AB /* Levels */,
 			);
 			name = Source;
@@ -272,6 +309,37 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFEA4F9219BBA61000E70619 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				DFEA4F9419BBA63C00E70619 /* Hydrogen.h */,
+				DFEA4F9519BBA63C00E70619 /* Hydrogen.m */,
+				DFEA4F9719BBA6F800E70619 /* Oxygen.h */,
+				DFEA4F9819BBA6F800E70619 /* Oxygen.m */,
+				DFEA4F9A19BBA70C00E70619 /* Boron.h */,
+				DFEA4F9B19BBA70C00E70619 /* Boron.m */,
+				DFEA4F9D19BBA71700E70619 /* Bromine.h */,
+				DFEA4F9E19BBA71700E70619 /* Bromine.m */,
+				DFEA4FA019BBA76000E70619 /* Chlorine.h */,
+				DFEA4FA119BBA76000E70619 /* Chlorine.m */,
+				DFEA4FA319BBA76B00E70619 /* Carbon.h */,
+				DFEA4FA419BBA76B00E70619 /* Carbon.m */,
+				DFEA4FA619BBA78200E70619 /* Potassium.h */,
+				DFEA4FA719BBA78200E70619 /* Potassium.m */,
+				DFEA4FA919BBA78E00E70619 /* Sodium.h */,
+				DFEA4FAA19BBA78E00E70619 /* Sodium.m */,
+				DFEA4FAC19BBA79A00E70619 /* Nitrogen.h */,
+				DFEA4FAD19BBA79A00E70619 /* Nitrogen.m */,
+				DFEA4FAF19BBA7A900E70619 /* Rubodium.h */,
+				DFEA4FB019BBA7A900E70619 /* Rubodium.m */,
+				DFEA4FB219BBA7BE00E70619 /* Fluorine.h */,
+				DFEA4FB319BBA7BE00E70619 /* Fluorine.m */,
+				DFEA4FB519BBA7CA00E70619 /* Lithium.h */,
+				DFEA4FB619BBA7CA00E70619 /* Lithium.m */,
+			);
+			name = Elements;
 			sourceTree = "<group>";
 		};
 		DFF5E4D919BAE892003353AB /* Levels */ = {
@@ -431,18 +499,30 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* Level.m in Sources */,
 				DFF5E4D119BAD59D003353AB /* Atom.m in Sources */,
+				DFEA4F9619BBA63C00E70619 /* Hydrogen.m in Sources */,
+				DFEA4F9C19BBA70C00E70619 /* Boron.m in Sources */,
+				DFEA4FA219BBA76000E70619 /* Chlorine.m in Sources */,
 				DFEA4F7519BB1D9B00E70619 /* Level9.m in Sources */,
 				DFEA4F6C19BB1D7200E70619 /* Level6.m in Sources */,
+				DFEA4FAB19BBA78E00E70619 /* Sodium.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				DFEA4F6619BB1D6100E70619 /* Level4.m in Sources */,
 				DFEA4F6019BB1D5200E70619 /* Level2.m in Sources */,
+				DFEA4F9F19BBA71700E70619 /* Bromine.m in Sources */,
 				D099809219BAD227006E4873 /* startScene.m in Sources */,
+				DFEA4FB719BBA7CA00E70619 /* Lithium.m in Sources */,
 				D0C5E26719BB5FAE00567E12 /* LevelBasics.m in Sources */,
+				DFEA4FB419BBA7BE00E70619 /* Fluorine.m in Sources */,
 				DFEA4F6F19BB1D8A00E70619 /* Level7.m in Sources */,
 				DFEA4F5D19BB1D4400E70619 /* Level1.m in Sources */,
+				DFEA4FB119BBA7A900E70619 /* Rubodium.m in Sources */,
+				DFEA4FAE19BBA79A00E70619 /* Nitrogen.m in Sources */,
 				DFEA4F7819BB1DA400E70619 /* Level10.m in Sources */,
+				DFEA4FA819BBA78200E70619 /* Potassium.m in Sources */,
 				DFEA4F6319BB1D5900E70619 /* Level3.m in Sources */,
 				DFEA4F7219BB1D9200E70619 /* Level8.m in Sources */,
+				DFEA4F9919BBA6F800E70619 /* Oxygen.m in Sources */,
+				DFEA4FA519BBA76B00E70619 /* Carbon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

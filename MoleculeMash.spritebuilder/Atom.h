@@ -9,9 +9,5 @@
 #import "CCNode.h"
 
 @interface Atom : CCNode
-@property (assign, nonatomic) int protonNumber;
-@property (assign, nonatomic) int neutronNumber;
-@property (assign, nonatomic) int electronNumber;
 
--(void) setWithProtons: (int) protons withNeutrons: (int) neutrons withElectrons: (int) electrons;
 @end

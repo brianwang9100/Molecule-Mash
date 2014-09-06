@@ -22,7 +22,7 @@
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
-@property (strong, nonatomic) NSMutableArray *objectiveFirstAtom;
+@property (strong, nonatomic) NSMutableArray *listOfAtoms;
 @property (strong, nonatomic) NSMutableArray *objectiveFinalMolecule;
 @property (strong, nonatomic) CCLabelTTF *objectiveLabel;
 @property (strong, nonatomic) CCLabelTTF *levelTitleLabel;

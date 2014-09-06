@@ -1,5 +1,5 @@
 //
-//  Atom.m
+//  Carbon.h
 //  MoleculeMash
 //
 //  Created by Brian Wang on 9/6/14.
@@ -8,10 +8,6 @@
 
 #import "Atom.h"
 
-@implementation Atom
--(void) didLoadFromCCB
-{
-    
-}
+@interface Carbon : Atom
 
 @end
