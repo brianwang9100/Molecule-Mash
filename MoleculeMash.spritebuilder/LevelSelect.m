@@ -7,7 +7,7 @@
 //
 
 #import "LevelSelect.h"
-#import "MainScene.h"
+#import "Level.h"
 
 @implementation LevelSelect
 int _someNumber;
@@ -20,9 +20,7 @@ int _someNumber;
 {
     CCButton *selectedButton = (CCButton *)sender;
     int levelNumber = [selectedButton.name intValue];
-    MainScene *levelScene = (MainScene *)[CCBReader loadAsScene: @"MainScene"];
-    [[CCDirector sharedDirector] replaceScene: levelScene];
-    
-//    levelScene.levelNumber = levelNumber;
+    Level *levelScene = (Level *)[CCBReader loadAsScene: [NSString stringWithFormat:@"Level%i", levelNumber]];
+    [[CCDirector sharedDirector]  replaceScene: levelScene];
 }
 @end
