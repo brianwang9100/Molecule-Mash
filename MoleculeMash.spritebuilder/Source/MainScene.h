@@ -7,8 +7,9 @@
 //
 
 #import "CCNode.h"
-
-@interface MainScene : CCNode
+#import "Level.h"
+#import "CCPhysics+ObjectiveChipmunk.h"
+@interface MainScene : CCNode <CCPhysicsCollisionDelegate>
 @property (assign, nonatomic) int levelNumber;
 
 @end

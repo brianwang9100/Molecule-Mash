@@ -14,11 +14,19 @@
     
     CCNode *_mainPauseButton;
     
+    
     BOOL paused;
 }
 
--(void)pause{
-    if(self.paused) {
+-(void) onEnter
+{
+    
+}
+
+-(void) pause
+{
+    if(self.paused)
+    {
         
         self.paused = false;
         self.userInteractionEnabled = true;
@@ -27,8 +35,8 @@
         [self removeChild:_pauseScene];
         
     }
-    
-    else {
+    else
+    {
         
         [[CCDirector sharedDirector] pause];
         _pauseScene = [CCBReader load:@"PauseNode" owner:self];
@@ -38,8 +46,6 @@
         _pauseScene.positionType = (CCPositionTypeMake(CCPositionUnitNormalized, CCPositionUnitNormalized, CCPositionReferenceCornerTopLeft));
         _pauseScene.position = ccp(0.5f,0.5f);
         [self addChild:_pauseScene];
-        
-        
     }
 }
 @end
