@@ -24,4 +24,7 @@
 
 -(void) didLoadFromCCB;
 -(void) update:(CCTime)delta;
+-(void) pause;
+-(void) restart;
+-(void) quit;
 @end

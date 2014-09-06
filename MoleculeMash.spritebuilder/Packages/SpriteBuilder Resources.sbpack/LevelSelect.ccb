@@ -519,7 +519,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>10</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -566,7 +566,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level10</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -834,6 +834,8 @@
 												</array>
 											</dict>
 										</array>
+										<key>selected</key>
+										<true/>
 									</dict>
 									<dict>
 										<key>UUID</key>
@@ -858,7 +860,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>7</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -905,7 +907,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level7</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -1197,7 +1199,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>4</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -1244,7 +1246,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level4</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -1536,7 +1538,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>1</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -1583,7 +1585,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level1</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -1851,8 +1853,6 @@
 												</array>
 											</dict>
 										</array>
-										<key>selected</key>
-										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -2640,7 +2640,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>8</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2687,7 +2687,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level8</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -2979,7 +2979,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>5</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -3026,7 +3026,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level5</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -3318,7 +3318,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>2</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -3365,7 +3365,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level2</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -4420,7 +4420,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>9</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -4467,7 +4467,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level9</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -4759,7 +4759,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>6</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -4806,7 +4806,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level6</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -5098,7 +5098,7 @@
 												<key>type</key>
 												<string>StringSimple</string>
 												<key>value</key>
-												<string></string>
+												<string>3</string>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -5145,7 +5145,7 @@
 												<string>Block</string>
 												<key>value</key>
 												<array>
-													<string>changeLevel:</string>
+													<string>level3</string>
 													<integer>1</integer>
 												</array>
 											</dict>
@@ -5713,8 +5713,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

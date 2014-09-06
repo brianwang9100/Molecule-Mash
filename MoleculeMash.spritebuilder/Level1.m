@@ -15,11 +15,27 @@
     [super didLoadFromCCB];
     self.levelNumber = 1;
     self.totalNumberOfObjectives = 3;
+
 }
 
 -(void) setupArrays
 {
     self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Diatomic Nitrogen", @"Diatomic Oxygen", @"H2O", nil];
 
+}
+
+-(void) pause
+{
+    [super pause];
+}
+
+-(void) restart
+{
+    [super restart];
+}
+
+-(void) quit
+{
+    [super quit];
 }
 @end

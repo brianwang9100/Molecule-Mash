@@ -15,4 +15,19 @@
     [super didLoadFromCCB];
     self.levelNumber = 12;
 }
+
+-(void) pause
+{
+    [super pause];
+}
+
+-(void) restart
+{
+    [super restart];
+}
+
+-(void) quit
+{
+    [super quit];
+}
 @end
