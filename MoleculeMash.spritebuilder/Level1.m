@@ -13,7 +13,8 @@
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
-    self.levelNumber = 1;
+    self.levelNumber = 2;
+
 }
 
 //-(void) setupArrays
