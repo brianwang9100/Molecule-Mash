@@ -13,6 +13,9 @@
 #import "Level8.h"
 
 @implementation Level8
+{
+    LevelBasics *_levelBasics;
+}
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];

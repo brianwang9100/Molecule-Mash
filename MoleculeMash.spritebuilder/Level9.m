@@ -10,6 +10,9 @@
 #import "Level9.h"
 
 @implementation Level9
+{
+    LevelBasics *_levelBasics;
+}
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
