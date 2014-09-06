@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface LevelBasics : CCNode
-
+@property (assign, nonatomic) int levelNumber;
+-(void)pause;
 @end

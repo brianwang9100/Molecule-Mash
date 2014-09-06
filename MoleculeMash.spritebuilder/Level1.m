@@ -9,11 +9,13 @@
 #import "Level1.h"
 
 @implementation Level1
-
+{
+    LevelBasics *_levelBasics;
+}
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
-    self.levelNumber = 1;
+    _levelBasics.levelNumber = 1;
 }
 
 -(void) setupArrays
@@ -22,19 +24,21 @@
 
 }
 
--(void) pause
-{
-    [super pause];
-}
 
--(void) restart
-{
-    [super restart];
-}
 
--(void) quit
-{
-    [super quit];
-}
+//-(void) pause
+//{
+//    [super pause];
+//}
+//
+//-(void) restart
+//{
+//    [super restart];
+//}
+//
+//-(void) quit
+//{
+//    [super quit];
+//}
 
 @end

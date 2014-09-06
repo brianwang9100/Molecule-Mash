@@ -44,54 +44,54 @@
     _currentObjectiveNumber++;
 }
 
--(void) pause
-{
-    if(self.paused)
-    {
-        
-        self.paused = false;
-        self.userInteractionEnabled = true;
-        [[CCDirector sharedDirector] resume];
-        _mainPauseButton.visible = true;
-        [self removeChild:_pauseScene];
-        
-    }
-    else
-    {
-        
-        [[CCDirector sharedDirector] pause];
-        _pauseScene = [CCBReader load:@"PauseNode" owner:self];
-        self.paused = true;
-        self.userInteractionEnabled = false;
-        _mainPauseButton.visible = false;
-        _pauseScene.positionType = (CCPositionTypeMake(CCPositionUnitNormalized, CCPositionUnitNormalized, CCPositionReferenceCornerTopLeft));
-        _pauseScene.position = ccp(0.5f,0.5f);
-        [self addChild:_pauseScene];
-    }
-}
-
-
--(void) restart {
-    if (self.paused) {
-        
-        self.paused = FALSE;
-        
-        [[CCDirector sharedDirector] resume];        
-        [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", self.levelNumber]]];
-        
-    }
-}
-
--(void) quit {
-    if (self.paused) {
-        
-        self.paused = FALSE;
-
-        [[CCDirector sharedDirector] resume];
-    }
-    
-    
-    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
-}
+//-(void) pause
+//{
+//    if(self.paused)
+//    {
+//        
+//        self.paused = false;
+//        self.userInteractionEnabled = true;
+//        [[CCDirector sharedDirector] resume];
+//        _mainPauseButton.visible = true;
+//        [self removeChild:_pauseScene];
+//        
+//    }
+//    else
+//    {
+//        
+//        [[CCDirector sharedDirector] pause];
+//        _pauseScene = [CCBReader load:@"PauseNode" owner:self];
+//        self.paused = true;
+//        self.userInteractionEnabled = false;
+//        _mainPauseButton.visible = false;
+//        _pauseScene.positionType = (CCPositionTypeMake(CCPositionUnitNormalized, CCPositionUnitNormalized, CCPositionReferenceCornerTopLeft));
+//        _pauseScene.position = ccp(0.5f,0.5f);
+//        [self addChild:_pauseScene];
+//    }
+//}
+//
+//
+//-(void) restart {
+//    if (self.paused) {
+//        
+//        self.paused = FALSE;
+//        
+//        [[CCDirector sharedDirector] resume];        
+//        [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", self.levelNumber]]];
+//        
+//    }
+//}
+//
+//-(void) quit {
+//    if (self.paused) {
+//        
+//        self.paused = FALSE;
+//
+//        [[CCDirector sharedDirector] resume];
+//    }
+//    
+//    
+//    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
+//}
 
 @end

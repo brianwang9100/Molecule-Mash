@@ -7,7 +7,7 @@
 //
 
 #import "Level.h"
-
+#import "LevelBasics.h"
 @interface Level1 : Level
 
 @end
