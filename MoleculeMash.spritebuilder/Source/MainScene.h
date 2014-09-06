@@ -9,6 +9,6 @@
 #import "CCNode.h"
 
 @interface MainScene : CCNode
-@property (assign, nonatomic) int levelNumber;
+@property
 
 @end

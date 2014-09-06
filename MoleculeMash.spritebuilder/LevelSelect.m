@@ -20,7 +20,7 @@ int _someNumber;
 {
     CCButton *selectedButton = (CCButton *)sender;
     int levelNumber = [selectedButton.name intValue];
-    MainScene *levelScene = (MainScene*) [CCBReader loadAsScene: @"MainScene"];
+    MainScene *levelScene = [CCBReader loadAsScene: @"MainScene"];
     levelScene.levelNumber = levelNumber;
     [[CCDirector sharedDirector] replaceScene: levelScene];
 }
