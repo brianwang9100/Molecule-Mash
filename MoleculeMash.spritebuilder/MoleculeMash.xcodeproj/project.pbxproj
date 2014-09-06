@@ -37,13 +37,10 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
-<<<<<<< HEAD
+		D099809219BAD227006E4873 /* startScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D099809119BAD227006E4873 /* startScene.m */; };
 		DFF5E4D119BAD59D003353AB /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D019BAD59D003353AB /* Atom.m */; };
 		DFF5E4D319BAD6A3003353AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFF5E4D219BAD6A3003353AB /* README.md */; };
 		DFF5E4D819BAE884003353AB /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D719BAE884003353AB /* Level.m */; };
-=======
-		D099809219BAD227006E4873 /* startScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D099809119BAD227006E4873 /* startScene.m */; };
->>>>>>> origin/startscene
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,16 +97,13 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
-<<<<<<< HEAD
+		D099809019BAD227006E4873 /* startScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startScene.h; sourceTree = "<group>"; };
+		D099809119BAD227006E4873 /* startScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startScene.m; sourceTree = "<group>"; };
 		DFF5E4CF19BAD59D003353AB /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DFF5E4D019BAD59D003353AB /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		DFF5E4D219BAD6A3003353AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DFF5E4D619BAE884003353AB /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
 		DFF5E4D719BAE884003353AB /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
-=======
-		D099809019BAD227006E4873 /* startScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startScene.h; sourceTree = "<group>"; };
-		D099809119BAD227006E4873 /* startScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startScene.m; sourceTree = "<group>"; };
->>>>>>> origin/startscene
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,14 +146,11 @@
 				D099809119BAD227006E4873 /* startScene.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
-<<<<<<< HEAD
 				DFF5E4CF19BAD59D003353AB /* Atom.h */,
 				DFF5E4D019BAD59D003353AB /* Atom.m */,
-				DFF5E4D919BAE892003353AB /* Levels */,
-=======
 				05A6DFF519BAE01B002539D7 /* LevelSelect.h */,
 				05A6DFF619BAE01B002539D7 /* LevelSelect.m */,
->>>>>>> origin/Levels2
+				DFF5E4D919BAE892003353AB /* Levels */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -381,11 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				DFF5E4D819BAE884003353AB /* Level.m in Sources */,
-=======
 				05A6DFF719BAE01B002539D7 /* LevelSelect.m in Sources */,
->>>>>>> origin/Levels2
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				DFF5E4D119BAD59D003353AB /* Atom.m in Sources */,
