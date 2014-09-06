@@ -78,16 +78,11 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
-		<key>Sprites</key>
-		<dict/>
-<<<<<<< HEAD
-=======
 		<key>Sprites/atom.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
->>>>>>> origin/startscene
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
