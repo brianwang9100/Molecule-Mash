@@ -78,8 +78,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>4</real>
+									<real>-3</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -107,6 +107,8 @@
 								<string>Particles/Proton.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -140,8 +142,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-13.107510566711426</real>
-									<real>4.2192649841308594</real>
+									<real>-9.1075105667114258</real>
+									<real>1.2192649841308594</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -169,6 +171,8 @@
 								<string>Particles/Neutron.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -202,8 +206,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-1.8549387454986572</real>
-									<real>7.4342856407165527</real>
+									<real>2.1450612545013428</real>
+									<real>4.4342856407165527</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -231,6 +235,8 @@
 								<string>Particles/Neutron.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -264,8 +270,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-7.2337961196899414</real>
-									<real>6.4300408363342285</real>
+									<real>-3.2337961196899414</real>
+									<real>3.4300408363342285</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -293,6 +299,8 @@
 								<string>Particles/Proton.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -326,8 +334,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-10.093877792358398</real>
-									<real>-1.9436730146408081</real>
+									<real>-6.0938777923583984</real>
+									<real>-4.9436731338500977</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -355,6 +363,8 @@
 								<string>Particles/Proton.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -388,8 +398,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-5.3319187164306641</real>
-									<real>-3.893388032913208</real>
+									<real>-1.3319187164306641</real>
+									<real>-6.8933877944946289</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -417,6 +427,8 @@
 								<string>Particles/Neutron.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
