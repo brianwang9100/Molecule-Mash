@@ -8,10 +8,11 @@
 
 #import "LevelBasics.h"
 #import "Level.h"
+#import "LevelScrollView.h"
 
 @implementation LevelBasics
 {
-    CCScrollView *_scrollView;
+    LevelScrollView *_scrollView;
     CCNode *_pauseScene;
     CCNode *_mainPauseButton;
     BOOL paused;
@@ -43,6 +44,21 @@
     [self addChild:scissor];
     
     [scissor addChild:_scrollView];
+    
+    _hydrogenButton = _scrollView.hydrogenButton;
+    _lithiumButton = _scrollView.lithiumButton;
+    _boronButton = _scrollView.boronButton;
+    _carbonButton = _scrollView.carbonButton;
+    _oxygenButton = _scrollView.oxygenButton;
+    _chlorineButton = _scrollView.chlorineButton;
+    _sodiumButton = _scrollView.sodiumButton;
+    _phosphorousButton = _scrollView.phosphorousButton;
+    _sulfurButton = _scrollView.sulfurButton;
+    _bromineButton = _scrollView.bromineButton;
+    _rubidiumButton = _scrollView.rubidiumButton;
+    _flourineButton = _scrollView.flourineButton;
+    _nitrogenButton = _scrollView.nitrogenButton;
+    _potassiumButton = _scrollView.potassiumButton;
 }
 
 -(void)pause

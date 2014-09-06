@@ -628,7 +628,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>pause</string>
+									<string></string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -981,11 +981,9 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string></string>
+						<string>LevelScrollView</string>
 						<key>displayName</key>
 						<string>CCScrollView</string>
-						<key>hidden</key>
-						<true/>
 						<key>memberVarAssignmentName</key>
 						<string>_scrollView</string>
 						<key>memberVarAssignmentType</key>
@@ -1092,6 +1090,8 @@
 								<false/>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>

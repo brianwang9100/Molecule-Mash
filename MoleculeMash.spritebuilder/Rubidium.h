@@ -1,5 +1,5 @@
 //
-//  Rubodium.h
+//  Rubidium.h
 //  MoleculeMash
 //
 //  Created by Brian Wang on 9/6/14.
@@ -8,6 +8,6 @@
 
 #import "Atom.h"
 
-@interface Rubodium : Atom
+@interface Rubidium : Atom
 
 @end

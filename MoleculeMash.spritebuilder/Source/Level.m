@@ -22,6 +22,21 @@
     _currentObjectiveNumber = 0;
     _timeTookForSwipe = 0;
     
+    _hydrogenNode = _levelBasics.hydrogenButton;
+    _lithiumNode = _levelBasics.lithiumButton;
+    _boronNode = _levelBasics.boronButton;
+    _carbonNode = _levelBasics.carbonButton;
+    _oxygenNode = _levelBasics.oxygenButton;
+    _chlorineNode = _levelBasics.chlorineButton;
+    _sodiumNode = _levelBasics.sodiumButton;
+    _phosphorousNode = _levelBasics.phosphorousButton;
+    _sulfurNode = _levelBasics.sulfurButton;
+    _bromineNode = _levelBasics.bromineButton;
+    _rubidiumNode = _levelBasics.rubidiumButton;
+    _flourineNode = _levelBasics.flourineButton;
+    _nitrogenNode = _levelBasics.nitrogenButton;
+    _potassiumNode = _levelBasics.potassiumButton;
+    
 }
 
 
@@ -41,7 +56,6 @@
 -(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
     _locationTouchEnded = [touch locationInNode:self];
-    if (
 }
 
 -(void) calculateDirections
