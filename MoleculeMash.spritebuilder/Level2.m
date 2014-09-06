@@ -15,6 +15,12 @@
     self.levelNumber = 2;
 }
 
+-(void) setupArrays
+{
+    self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Diatomic Nitrogen", @"Diatomic Oxygen", @"H2O", nil];
+    
+}
+
 -(void) pause
 {
     [super pause];

@@ -44,7 +44,7 @@
     _currentObjectiveNumber++;
 }
 
--(void)pause
+-(void) pause
 {
     if(self.paused)
     {

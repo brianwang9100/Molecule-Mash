@@ -14,8 +14,6 @@
 {
     [super didLoadFromCCB];
     self.levelNumber = 1;
-    self.totalNumberOfObjectives = 3;
-
 }
 
 -(void) setupArrays
@@ -38,4 +36,5 @@
 {
     [super quit];
 }
+
 @end
