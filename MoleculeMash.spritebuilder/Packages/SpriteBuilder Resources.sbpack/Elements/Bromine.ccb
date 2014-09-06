@@ -1115,6 +1115,52 @@
 			<dict>
 				<key>UUID</key>
 				<integer>53</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>rotation</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>0.0</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>4</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>360</real>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>rotation</string>
+							<key>type</key>
+							<integer>2</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCNode</string>
 				<key>children</key>
@@ -1833,8 +1879,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-20.254629135131836</real>
-									<real>9.1628093719482422</real>
+									<real>-18.275999069213867</real>
+									<real>4.2172737121582031</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2143,8 +2189,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>18.807870864868164</real>
-									<real>6.2692909240722656</real>
+									<real>6.232241153717041</real>
+									<real>15.016557693481445</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2887,8 +2933,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>16.87885856628418</real>
-									<real>-9.1628074645996094</real>
+									<real>14.388681411743164</real>
+									<real>6.3469862937927246</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -2949,8 +2995,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>5.304783821105957</real>
-									<real>-16.396602630615234</real>
+									<real>-8.7133712768554688</real>
+									<real>-16.503017425537109</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3011,8 +3057,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.96450614929199219</real>
-									<real>11.574073791503906</real>
+									<real>-2.1006286144256592</real>
+									<real>17.589742660522461</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3197,8 +3243,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>-18.807868957519531</real>
-									<real>1.4467573165893555</real>
+									<real>-2.4550654888153076</real>
+									<real>6.5314497947692871</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -3297,7 +3343,19 @@
 							<integer>0</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>baseValue</key>
+						<real>0.0</real>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>48.000003814697266</real>
+					</dict>
 				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -3417,15 +3475,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>4</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.53333336114883423</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
