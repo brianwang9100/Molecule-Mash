@@ -9,5 +9,9 @@
 #import "Level10.h"
 
 @implementation Level10
-
+-(void) didLoadFromCCB
+{
+    [super didLoadFromCCB];
+    self.levelNumber = 10;
+}
 @end

@@ -8,7 +8,10 @@
 
 #import "CCScene.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
+#import "Atom.h"
 @interface Level : CCScene <CCPhysicsCollisionDelegate>
 @property (assign, nonatomic) int levelNumber;
+@property (strong, nonatomic) Atom *currentAtom;
 
+-(void) didLoadFromCCB;
 @end

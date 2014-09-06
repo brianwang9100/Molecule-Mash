@@ -13,4 +13,5 @@
 @property (assign, nonatomic) int neutronNumber;
 @property (assign, nonatomic) int electronNumber;
 
+-(void) setWithProtons: (int) protons withNeutrons: (int) neutrons withElectrons: (int) electrons;
 @end

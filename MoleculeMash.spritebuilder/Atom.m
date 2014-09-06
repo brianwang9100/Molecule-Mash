@@ -14,13 +14,13 @@
     
 }
 
--(id) initWithProtons: (int) protons withNeutrons: (int) neutrons withElectrons: (int) electrons
+
+
+-(void) setWithProtons: (int) protons withNeutrons: (int) neutrons withElectrons: (int) electrons
 {
     _protonNumber = protons;
     _neutronNumber = neutrons;
     _electronNumber = electrons;
-    
-    return self;
 }
 
 -(void) addProton

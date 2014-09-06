@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "level.h"
+
+#import "Level.h"
 
 @interface Level5 : Level
 
