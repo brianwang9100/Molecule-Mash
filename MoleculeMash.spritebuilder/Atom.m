@@ -14,7 +14,7 @@
     
 }
 
--(id) initWithProtons: int protons withNeutrons: int neutrons withElectrons: electrons
+-(id) initWithProtons: (int) protons withNeutrons: (int) neutrons withElectrons: (int) electrons
 {
     _protonNumber = protons;
     _neutronNumber = neutrons;
@@ -41,11 +41,5 @@
 -(void) update:(CCTime)delta
 {
 
-}
-
--(void) changeLevel: int level
-{
-    CCScene * mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: "Level%i", level]];
-    [CCDirector ]
 }
 @end
