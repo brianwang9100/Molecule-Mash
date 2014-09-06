@@ -21,6 +21,8 @@
 @property (assign, nonatomic) int currentObjectiveNumber;
 @property (strong, nonatomic) NSMutableArray *objectiveFirstAtom;
 @property (strong, nonatomic) NSMutableArray *objectiveFinalMolecule;
+@property (strong, nonatomic) CCLabelTTF *objectiveLabel;
+@property (strong, nonatomic) CCLabelTTF *levelTitleLabel;
 
 -(void) didLoadFromCCB;
 -(void) update:(CCTime)delta;

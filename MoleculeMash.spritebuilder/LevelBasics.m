@@ -17,6 +17,8 @@
     // Create clipping viewport to clip scrollview
     CGSize winSize= [CCDirector sharedDirector].viewSize;
     
+    _scrollView.position =ccp(_scrollView.position.x, winSize.height*.5);
+    
     // Get content size in points.. contentSizeInPoints doesn't work in didLoad
     float width = _scrollView.contentSize.width * winSize.width;
     float height = _scrollView.contentSize.height * winSize.height;
@@ -31,7 +33,7 @@
     [scissorRect setPosition:_scrollView.position];
     
     CCClippingNode *scissor = [CCClippingNode clippingNodeWithStencil:scissorRect];
-    [scissor setContentSize:winSize];
+    [scissor setContentSize: winSize];
     [scissor setAlphaThreshold:0.0];
     
     [self addChild:scissor];
