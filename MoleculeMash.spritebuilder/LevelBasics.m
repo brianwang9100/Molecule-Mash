@@ -37,5 +37,6 @@
     [self addChild:scissor];
     
     [scissor addChild:_scrollView];
+    //had to make this small change
 }
 @end
