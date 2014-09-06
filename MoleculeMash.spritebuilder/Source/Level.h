@@ -38,7 +38,7 @@
 @property (strong, nonatomic) CCNodeColor *sulfurNode;
 @property (strong, nonatomic) CCNodeColor *bromineNode;
 @property (strong, nonatomic) CCNodeColor *rubidiumNode;
-@property (strong, nonatomic) CCNodeColor *flourineNode;
+@property (strong, nonatomic) CCNodeColor *fluorineNode;
 @property (strong, nonatomic) CCNodeColor *nitrogenNode;
 @property (strong, nonatomic) CCNodeColor *potassiumNode;
 

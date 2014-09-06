@@ -22,7 +22,7 @@
 @property (strong, nonatomic) CCNodeColor *sulfurButton;
 @property (strong, nonatomic) CCNodeColor *bromineButton;
 @property (strong, nonatomic) CCNodeColor *rubidiumButton;
-@property (strong, nonatomic) CCNodeColor *flourineButton;
+@property (strong, nonatomic) CCNodeColor *fluorineButton;
 @property (strong, nonatomic) CCNodeColor *nitrogenButton;
 @property (strong, nonatomic) CCNodeColor *potassiumButton;
 

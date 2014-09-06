@@ -15,7 +15,7 @@
     float _timeTookForSwipe;
 }
 
--(void) didLoadFromCCB
+-(void) onEnter
 {
     self.userInteractionEnabled = TRUE;
     _physicsNode.collisionDelegate = self;
@@ -33,7 +33,7 @@
     _sulfurNode = _levelBasics.sulfurButton;
     _bromineNode = _levelBasics.bromineButton;
     _rubidiumNode = _levelBasics.rubidiumButton;
-    _flourineNode = _levelBasics.flourineButton;
+    _fluorineNode = _levelBasics.fluorineButton;
     _nitrogenNode = _levelBasics.nitrogenButton;
     _potassiumNode = _levelBasics.potassiumButton;
     

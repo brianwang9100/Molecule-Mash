@@ -10,4 +10,8 @@
 
 @implementation AtomList
 
+-(void) update:(CCTime)delta
+{
+    
+}
 @end

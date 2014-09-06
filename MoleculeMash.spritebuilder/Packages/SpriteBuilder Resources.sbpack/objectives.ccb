@@ -437,9 +437,9 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_rubodiumButton</string>
+						<string>_rubidiumButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -523,6 +523,8 @@
 								<real>1</real>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -917,7 +919,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_bromineButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -1395,7 +1397,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_potassiumButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -1873,7 +1875,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_chlorineButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -2351,7 +2353,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_sulfurButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -2829,7 +2831,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_phosphorousButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -3307,7 +3309,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_sodiumButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -3785,7 +3787,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_fluorineButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -4263,7 +4265,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_oxygenButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -4741,7 +4743,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_nitrogenButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -5219,7 +5221,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_carbonButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -5697,7 +5699,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_boronButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -6175,7 +6177,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_lithiumButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -6653,7 +6655,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_hydrogenButton</string>
 						<key>memberVarAssignmentType</key>
-						<integer>2</integer>
+						<integer>1</integer>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -6818,7 +6820,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>AtomList</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

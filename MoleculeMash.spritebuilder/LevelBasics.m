@@ -56,7 +56,7 @@
     _sulfurButton = _scrollView.sulfurButton;
     _bromineButton = _scrollView.bromineButton;
     _rubidiumButton = _scrollView.rubidiumButton;
-    _flourineButton = _scrollView.flourineButton;
+    _fluorineButton = _scrollView.fluorineButton;
     _nitrogenButton = _scrollView.nitrogenButton;
     _potassiumButton = _scrollView.potassiumButton;
 }
