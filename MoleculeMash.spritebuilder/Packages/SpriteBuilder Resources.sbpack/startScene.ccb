@@ -756,7 +756,7 @@
 									<key>value</key>
 									<array>
 										<real>0.44999998807907104</real>
-										<real>0.20000000298023224</real>
+										<real>0.20176057517528534</real>
 									</array>
 								</dict>
 								<dict>
@@ -856,7 +856,7 @@
 						<key>value</key>
 						<array>
 							<real>0.44999998807907104</real>
-							<real>0.20000000298023224</real>
+							<real>0.20176057517528534</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1148,6 +1148,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
