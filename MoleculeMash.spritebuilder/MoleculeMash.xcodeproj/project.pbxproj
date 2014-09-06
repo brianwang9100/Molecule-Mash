@@ -98,7 +98,6 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		DFF5E4CF19BAD59D003353AB /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DFF5E4D019BAD59D003353AB /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		DFF5E4D219BAD6A3003353AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -150,15 +149,9 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				DFF5E4CF19BAD59D003353AB /* Atom.h */,
 				DFF5E4D019BAD59D003353AB /* Atom.m */,
-<<<<<<< HEAD
 				05A6DFF519BAE01B002539D7 /* LevelSelect.h */,
 				05A6DFF619BAE01B002539D7 /* LevelSelect.m */,
 				DFF5E4D919BAE892003353AB /* Levels */,
-=======
-				DFF5E4D919BAE892003353AB /* Levels */,
-				05A6DFF519BAE01B002539D7 /* LevelSelect.h */,
-				05A6DFF619BAE01B002539D7 /* LevelSelect.m */,
->>>>>>> FETCH_HEAD
 			);
 			name = Source;
 			sourceTree = "<group>";
