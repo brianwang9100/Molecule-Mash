@@ -14,4 +14,6 @@
     [super didLoadFromCCB];
     self.levelNumber = 2;
 }
+
+
 @end

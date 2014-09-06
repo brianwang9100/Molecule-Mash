@@ -38,6 +38,7 @@
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		D099809219BAD227006E4873 /* startScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D099809119BAD227006E4873 /* startScene.m */; };
+		D0C5E26719BB5FAE00567E12 /* LevelBasics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C5E26619BB5FAE00567E12 /* LevelBasics.m */; };
 		DFEA4F5D19BB1D4400E70619 /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F5C19BB1D4400E70619 /* Level1.m */; };
 		DFEA4F6019BB1D5200E70619 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F5F19BB1D5200E70619 /* Level2.m */; };
 		DFEA4F6319BB1D5900E70619 /* Level3.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4F6219BB1D5900E70619 /* Level3.m */; };
@@ -113,6 +114,8 @@
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		D099809019BAD227006E4873 /* startScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = startScene.h; sourceTree = "<group>"; };
 		D099809119BAD227006E4873 /* startScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = startScene.m; sourceTree = "<group>"; };
+		D0C5E26519BB5FAE00567E12 /* LevelBasics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelBasics.h; sourceTree = "<group>"; };
+		D0C5E26619BB5FAE00567E12 /* LevelBasics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelBasics.m; sourceTree = "<group>"; };
 		DFEA4F5B19BB1D4400E70619 /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		DFEA4F5C19BB1D4400E70619 /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level1.m; sourceTree = "<group>"; };
 		DFEA4F5E19BB1D5200E70619 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				DFF5E4D019BAD59D003353AB /* Atom.m */,
 				05A6DFF519BAE01B002539D7 /* LevelSelect.h */,
 				05A6DFF619BAE01B002539D7 /* LevelSelect.m */,
+				D0C5E26519BB5FAE00567E12 /* LevelBasics.h */,
+				D0C5E26619BB5FAE00567E12 /* LevelBasics.m */,
 				DFF5E4D919BAE892003353AB /* Levels */,
 			);
 			name = Source;
@@ -457,6 +462,7 @@
 				DFEA4F6019BB1D5200E70619 /* Level2.m in Sources */,
 				D099809219BAD227006E4873 /* startScene.m in Sources */,
 				DFEA4F8119BB1DBE00E70619 /* Level13.m in Sources */,
+				D0C5E26719BB5FAE00567E12 /* LevelBasics.m in Sources */,
 				DFEA4F7B19BB1DAC00E70619 /* Level11.m in Sources */,
 				DFEA4F6F19BB1D8A00E70619 /* Level7.m in Sources */,
 				DFEA4F5D19BB1D4400E70619 /* Level1.m in Sources */,
