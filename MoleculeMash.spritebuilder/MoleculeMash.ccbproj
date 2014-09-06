@@ -80,11 +80,6 @@
 		</dict>
 		<key>Sprites</key>
 		<dict/>
-		<key>Sprites/Space-Horizon-ipadhd@4x.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
