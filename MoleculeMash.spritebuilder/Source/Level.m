@@ -28,8 +28,8 @@
     self.levelBasics.objectiveLabel.string = @"";
     self.backgroundLabel.string = @"";
     
-    _nextXvalue = 100;
-    _nextXvalue = 100;
+    _nextXvalue = 50;
+    _nextYvalue = 50;
     
     
     self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -201,8 +201,8 @@
             [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
             [self performSelector:@selector(removeMaxedOutLabel) withObject:nil afterDelay:1];
             
-            _nextXvalue = 100;
-            _nextYvalue = 100;
+            _nextXvalue = 50;
+            _nextYvalue = 50;
             
         }
     }
