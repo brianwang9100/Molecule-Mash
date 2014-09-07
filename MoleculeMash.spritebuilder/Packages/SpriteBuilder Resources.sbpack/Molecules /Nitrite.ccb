@@ -1705,8 +1705,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-40</real>
-							<real>-1.0000016689300537</real>
+							<real>3.9999983310699463</real>
+							<real>27.999998092651367</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3431,8 +3431,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>30</real>
-							<real>-2.9999995231628418</real>
+							<real>74</real>
+							<real>26</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -5157,8 +5157,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-42</real>
-							<real>-73</real>
+							<real>2</real>
+							<real>-44</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -6749,8 +6749,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-132</real>
-							<real>0.0</real>
+							<real>-88</real>
+							<real>29</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -6827,8 +6827,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-100</real>
-							<real>10</real>
+							<real>-56</real>
+							<real>39</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -6889,8 +6889,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-100</real>
-							<real>-12</real>
+							<real>-56</real>
+							<real>17</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -6951,8 +6951,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-99.175125122070312</real>
-							<real>9.141510009765625</real>
+							<real>-55.175125122070312</real>
+							<real>38.141510009765625</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -7050,8 +7050,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-98.596420288085938</real>
-							<real>-12.270526885986328</real>
+							<real>-54.596420288085938</real>
+							<real>16.729473114013672</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -7188,6 +7188,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

@@ -1514,8 +1514,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-81.421295166015625</real>
-							<real>-56.578704833984375</real>
+							<real>-61.421295166015625</real>
+							<real>-31.578704833984375</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3232,8 +3232,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-11</real>
-							<real>24</real>
+							<real>9</real>
+							<real>49</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -4950,8 +4950,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>56</real>
-							<real>-61</real>
+							<real>76</real>
+							<real>-36</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -5848,8 +5848,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-84</real>
-							<real>-101</real>
+							<real>-64</real>
+							<real>-76</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -6746,8 +6746,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-82</real>
-							<real>-11.99998950958252</real>
+							<real>-62</real>
+							<real>13.00001049041748</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -8329,8 +8329,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-11</real>
-							<real>-59</real>
+							<real>9</real>
+							<real>-34</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -9219,8 +9219,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-131</real>
-							<real>-54.999996185302734</real>
+							<real>-111</real>
+							<real>-29.999994277954102</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -9344,6 +9344,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
