@@ -10,9 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-
 	<integer>55</integer>
-
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -1570,8 +1568,6 @@
 								<string>Particles/Proton.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1669,11 +1665,19 @@
 				<key>displayName</key>
 				<string>CCLabelTTF</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_atomLabel</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
 				<array>
+					<dict>
+						<key>name</key>
+						<string>visible</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
 					<dict>
 						<key>name</key>
 						<string>name</string>
