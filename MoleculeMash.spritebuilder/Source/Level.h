@@ -7,7 +7,6 @@
 //
 
 #import "CCScene.h"
-#import "CCPhysics+ObjectiveChipmunk.h"
 #import "Atom.h"
 #import "LevelBasics.h"
 #import "Hydrogen.h"
@@ -25,9 +24,10 @@
 #import "Potassium.h"
 #import "Phosphorous.h"
 #import "GenericLabel.h"
+#import "PostGamePopUp.h"
 
 
-@interface Level : CCScene <CCPhysicsCollisionDelegate>
+@interface Level : CCScene
 @property (strong, nonatomic) Atom *currentAtom;
 @property (strong, nonatomic) CCPhysicsNode *physicsNode;
 @property (strong, nonatomic) CCNode *pauseScene;
@@ -46,6 +46,8 @@
 @property (assign, nonatomic) int nextYvalue;
 @property (assign, nonatomic) CCNode *arrow1;
 @property (assign, nonatomic) CCNode *arrow2;
+@property (assign, nonatomic) float timeTaken;
+@property (strong, nonatomic) PostGamePopUp *postGamePopUp;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;

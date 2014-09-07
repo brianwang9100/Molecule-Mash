@@ -9482,6 +9482,14 @@
 										</array>
 									</dict>
 									<dict>
+										<key>name</key>
+										<string>rotation</string>
+										<key>type</key>
+										<string>Degrees</string>
+										<key>value</key>
+										<real>35</real>
+									</dict>
+									<dict>
 										<key>baseValue</key>
 										<array>
 											<real>0.0</real>
@@ -9499,14 +9507,6 @@
 									</dict>
 									<dict>
 										<key>name</key>
-										<string>rotation</string>
-										<key>type</key>
-										<string>Degrees</string>
-										<key>value</key>
-										<real>35</real>
-									</dict>
-									<dict>
-										<key>name</key>
 										<string>ccbFile</string>
 										<key>type</key>
 										<string>CCBFile</string>
@@ -9514,7 +9514,6 @@
 										<string>Elements/Lithium.ccb</string>
 									</dict>
 								</array>
-
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -10759,7 +10758,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>4</real>
 			<key>name</key>
@@ -10767,8 +10766,7 @@
 			<key>offset</key>
 			<real>5.3828125</real>
 			<key>position</key>
-
-			<real>4</real>
+			<real>3.7333333492279053</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -26,6 +26,7 @@
     self.backgroundLabel.string = @"";
     self.didLaunch = NO;
     self.listOfAtoms = [NSMutableArray arrayWithObjects: nil];
+    self.timeTaken = 0;
     
     self.nextXvalue = 50;
     self.nextYvalue = 75;
@@ -256,4 +257,34 @@
     }
 }
 
+-(void) restart
+{
+
+}
+
+-(void) quit
+{
+    
+}
+
+-(void) levelSelect
+{
+    
+}
+
+-(void) nextLevel
+{
+    
+}
+
+-(void)loadParticleExplosionWithParticleName: (NSString *) particleName onObject: (CCNode*) object
+{
+    @synchronized(self)
+    {
+        CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
+        explosion.autoRemoveOnFinish = TRUE;
+        explosion.position = object.position;
+        [self addChild: explosion];
+    }
+}
 @end
