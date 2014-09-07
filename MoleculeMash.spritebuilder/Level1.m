@@ -61,6 +61,8 @@
 }
 -(void) endObjective1
 {
+    [_genericLabel removeFromParent];
+    _genericLabel = nil;
     _transitionMode = YES;
 //    id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
 //    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
@@ -129,6 +131,8 @@
 }
 -(void) endObjective2
 {
+    [_genericLabel removeFromParent];
+    _genericLabel = nil;
     _transitionMode = YES;
 //    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
 //    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
@@ -165,6 +169,8 @@
 
 -(void) endObjective3
 {
+    [_genericLabel removeFromParent];
+    _genericLabel = nil;
     _transitionMode = YES;
 //    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
 //    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
