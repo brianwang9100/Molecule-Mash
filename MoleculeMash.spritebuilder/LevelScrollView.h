@@ -1,16 +1,14 @@
 //
-//  LevelBasics.h
+//  LevelScrollView.h
 //  MoleculeMash
 //
-//  Created by Justin Matsnev on 9/6/14.
+//  Created by Brian Wang on 9/6/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCNode.h"
+#import "CCScrollView.h"
 
-@interface LevelBasics : CCNode
-@property (assign, nonatomic) int levelNumber;
-
+@interface LevelScrollView : CCScrollView
 @property (strong, nonatomic) CCNodeColor *hydrogenButton;
 @property (strong, nonatomic) CCNodeColor *lithiumButton;
 @property (strong, nonatomic) CCNodeColor *boronButton;
@@ -25,6 +23,4 @@
 @property (strong, nonatomic) CCNodeColor *fluorineButton;
 @property (strong, nonatomic) CCNodeColor *nitrogenButton;
 @property (strong, nonatomic) CCNodeColor *potassiumButton;
-
--(void)pause;
 @end

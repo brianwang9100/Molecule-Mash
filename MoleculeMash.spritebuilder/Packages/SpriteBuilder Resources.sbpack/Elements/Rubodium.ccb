@@ -19,7 +19,7 @@
 	<integer>0</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
-	<key>fileType</key>
+	<key>fileType</key>f
 	<string>CocosBuilder</string>
 	<key>fileVersion</key>
 	<integer>4</integer>

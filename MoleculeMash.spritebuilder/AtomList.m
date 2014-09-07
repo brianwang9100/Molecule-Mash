@@ -1,13 +1,17 @@
 //
-//  Rubodium.m
+//  AtomList.m
 //  MoleculeMash
 //
 //  Created by Brian Wang on 9/6/14.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "Rubodium.h"
+#import "AtomList.h"
 
-@implementation Rubodium
+@implementation AtomList
 
+-(void) update:(CCTime)delta
+{
+    
+}
 @end
