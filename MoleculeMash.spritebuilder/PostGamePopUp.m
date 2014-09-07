@@ -42,7 +42,7 @@
     {
         [self performSelector:@selector(loadStar2) withObject:nil afterDelay:1.50];
     }
-    if (self.time <= 10.0f)
+    if (self.time <= 15.0f)
     {
         [self performSelector:@selector(loadStar3) withObject:nil afterDelay:2.25];
         
@@ -86,7 +86,7 @@
 
 -(void) quit
 {
-    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    CCScene *mainScene = [CCBReader loadAsScene:@"startScene"];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
