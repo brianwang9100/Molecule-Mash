@@ -14,6 +14,8 @@
     CCNode *_pauseScene;
     CCNode *_mainPauseButton;
     BOOL paused;
+    
+
 }
 
 -(void) didLoadFromCCB {
@@ -84,7 +86,7 @@
 {
     if(self.paused)
     {
-        
+
         self.paused = false;
         self.userInteractionEnabled = true;
         [[CCDirector sharedDirector] resume];
@@ -94,9 +96,12 @@
     }
     else
     {
-        
+
         [[CCDirector sharedDirector] pause];
         _pauseScene = [CCBReader load:@"PauseNode" owner:self];
+        _mainPauseButton.visible = false;
+        
+
         self.paused = true;
         self.userInteractionEnabled = false;
         _mainPauseButton.visible = false;
