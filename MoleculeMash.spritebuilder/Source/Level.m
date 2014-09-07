@@ -27,6 +27,7 @@
     self.levelBasics.levelTitleLabel.string = @"";
     self.levelBasics.objectiveLabel.string = @"";
     self.backgroundLabel.string = @"";
+    self.didLaunch = NO;
     
     _nextXvalue = 50;
     _nextYvalue = 50;
@@ -51,7 +52,7 @@
 
 -(void) update:(CCTime)delta
 {
-    if (_gameStarted)
+    if (_gameStarted && !self.didLaunch)
     {
         NSString *atomString;
         
