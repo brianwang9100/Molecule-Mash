@@ -11,7 +11,7 @@
 
 @implementation Level
 {
-    CCLabelTTF *_maxedOutLabel;
+    GenericLabel *_maxedOutLabel;
     
     int _nextXvalue;
     int _nextYvalue;
@@ -220,8 +220,8 @@
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
-    [self addToGrid: _currentAtom];
     [_listOfAtoms addObject:_currentAtom];
+    
     _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;

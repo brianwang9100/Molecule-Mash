@@ -47,11 +47,11 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string>GenericLabel</string>
+				<string></string>
 				<key>displayName</key>
 				<string>GenericLabel</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_label</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -245,10 +245,12 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>GenericLabel</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
