@@ -78,7 +78,7 @@
 }
 -(void) restart
 {
-    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.level.levelNumber) ]];
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Levels/Level%i",( self.level.levelNumber) ]];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
     
@@ -91,14 +91,14 @@
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
--(void) levelSelect
+-(void) nextLevel
 {
-    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", (self.level.levelNumber+1 )]];
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Levels/Level%i", (self.level.levelNumber+1 )]];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
--(void) nextLevel
+-(void) levelSelect
 {
     CCScene *mainScene = [CCBReader loadAsScene:@"LevelSelect"];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
