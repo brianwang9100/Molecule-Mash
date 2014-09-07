@@ -27,6 +27,8 @@
 -(void) startGame
 {
     self.gameStarted = YES;
+    self.levelBasics.levelTitleLabel.string = @"";
+    
     [self objective1];
 }
 
@@ -38,8 +40,10 @@
 -(void) objective1
 {
     _transitionMode = NO;
+    self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:0];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 1;
+    
 }
 -(void) endObjective1
 {
@@ -82,6 +86,7 @@
     self.currentMolecule = nil;
     [_genericLabel removeFromParent];
     _genericLabel = nil;
+    self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:1];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 2;
 }
@@ -109,6 +114,7 @@
     [_genericLabel removeFromParent];
     _genericLabel = nil;
     _transitionMode = NO;
+    self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:2];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 3;
 }
@@ -135,6 +141,7 @@
     self.currentMolecule = nil;
     [_genericLabel removeFromParent];
     _genericLabel = nil;
+    
     //loadEndGamePopUp
 }
 

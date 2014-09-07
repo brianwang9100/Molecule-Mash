@@ -13,6 +13,8 @@
 @property (assign, nonatomic) int levelNumber;
 @property (strong, nonatomic) LevelScrollView *scrollView;
 @property (assign, nonatomic) BOOL trashTime;
+@property (strong, nonatomic) CCLabelTTF *objectiveLabel;
+@property (strong, nonatomic) CCLabelTTF *levelTitleLabel;
 
 @property (assign, nonatomic) BOOL  hydrogenButton;
 @property (assign, nonatomic) BOOL  lithiumButton;

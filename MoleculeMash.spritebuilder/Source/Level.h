@@ -45,8 +45,6 @@
 @property (assign, nonatomic) int currentObjectiveNumber;
 @property (strong, nonatomic) NSMutableArray *listOfAtoms;
 @property (strong, nonatomic) NSMutableArray *objectiveFinalMolecule;
-@property (strong, nonatomic) CCLabelTTF *objectiveLabel;
-@property (strong, nonatomic) CCLabelTTF *levelTitleLabel;
 
 @property (assign, nonatomic) BOOL  hydrogenButton;
 @property (assign, nonatomic) BOOL  lithiumButton;
