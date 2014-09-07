@@ -563,7 +563,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>Rubidium</string>
+											<string>Rubidium +</string>
 											<false/>
 										</array>
 									</dict>
@@ -2057,7 +2057,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>Potassium</string>
+											<string>Potassium +</string>
 											<false/>
 										</array>
 									</dict>
@@ -5045,7 +5045,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>Sodium</string>
+											<string>Sodium +</string>
 											<false/>
 										</array>
 									</dict>
@@ -5181,6 +5181,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -9585,7 +9587,7 @@
 										<string>Text</string>
 										<key>value</key>
 										<array>
-											<string>Lithium</string>
+											<string>Lithium +</string>
 											<false/>
 										</array>
 									</dict>
@@ -10561,8 +10563,6 @@
 								<real>0.0</real>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

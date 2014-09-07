@@ -72,8 +72,36 @@
     {
         CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
         explosion.autoRemoveOnFinish = TRUE;
-        explosion.position = object.position;
+        explosion.position = object.positionInPoints;
         [self addChild: explosion];
     }
+}
+-(void) restart
+{
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.level.levelNumber) ]];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+    
+}
+
+-(void) quit
+{
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+}
+
+-(void) levelSelect
+{
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", (self.level.levelNumber+1 )]];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+}
+
+-(void) nextLevel
+{
+    CCScene *mainScene = [CCBReader loadAsScene:@"LevelSelect"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 @end

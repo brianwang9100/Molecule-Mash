@@ -7,12 +7,13 @@
 //
 
 #import "Level1.h"
-
+#import "PostGamePopUp.h"
 @implementation Level1
 {
     BOOL _transitionMode;
     BOOL _resetTransitionMode;
     GenericLabel * _genericLabel;
+    PostGamePopUp *_postGamePopUp;
 }
 -(void) didLoadFromCCB
 {
@@ -23,6 +24,7 @@
     self.totalNumberOfObjectives = 3;
     _transitionMode = NO;
     _resetTransitionMode = NO;
+    _postGamePopUp.level = self;
     
     [self performSelector:@selector(startGame) withObject:nil afterDelay:1.5];
 }
@@ -196,14 +198,14 @@
     self.levelBasics.levelTitleLabel.string = @"";
     self.levelBasics.objectiveLabel.string = @"";
     
-    self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
-    self.postGamePopUp.position = ccp(self.contentSizeInPoints.width*.5,self.contentSizeInPoints.height*.5);
-    [self addChild:self.postGamePopUp];
+    _postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
+    _postGamePopUp.position = ccp(self.contentSizeInPoints.width*.5,self.contentSizeInPoints.height*.5);
+    [self addChild:_postGamePopUp];
     
-    self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
-    self.postGamePopUp.time = (float) self.timeTaken;
-    self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
-    self.postGamePopUp.beginAnimation = YES;
+    _postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
+    _postGamePopUp.time = (float) self.timeTaken;
+    _postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
+    _postGamePopUp.beginAnimation = YES;
     
 }
 
@@ -329,23 +331,32 @@
     self.userInteractionEnabled = TRUE;
 }
 
--(void) levelSelect
-{
-    [super levelSelect];
-}
-
 -(void) restart
 {
-    [super restart];
-}
-
--(void) nextLevel
-{
-    [super nextLevel];
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.levelNumber) ]];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+    
 }
 
 -(void) quit
 {
-    [super quit];
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+}
+
+-(void) levelSelect
+{
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", (self.levelNumber+1 )]];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+}
+
+-(void) nextLevel
+{
+    CCScene *mainScene = [CCBReader loadAsScene:@"LevelSelect"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 @end

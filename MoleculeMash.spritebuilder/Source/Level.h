@@ -24,7 +24,6 @@
 #import "Potassium.h"
 #import "Phosphorous.h"
 #import "GenericLabel.h"
-#import "PostGamePopUp.h"
 
 
 @interface Level : CCScene
@@ -47,7 +46,7 @@
 @property (assign, nonatomic) CCNode *arrow1;
 @property (assign, nonatomic) CCNode *arrow2;
 @property (assign, nonatomic) float timeTaken;
-@property (strong, nonatomic) PostGamePopUp *postGamePopUp;
+
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
