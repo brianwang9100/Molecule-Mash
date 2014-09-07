@@ -573,7 +573,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -582,7 +582,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -1320,7 +1320,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1329,7 +1329,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -2067,7 +2067,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2076,7 +2076,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -2814,7 +2814,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2823,7 +2823,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -3561,7 +3561,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3570,7 +3570,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -4308,7 +4308,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -4317,7 +4317,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>10</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -5055,7 +5055,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5064,7 +5064,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -5802,7 +5802,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5811,7 +5811,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -6549,7 +6549,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -6558,7 +6558,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -7296,7 +7296,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -7305,7 +7305,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -8043,7 +8043,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8052,7 +8052,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -8790,7 +8790,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8799,7 +8799,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -9545,7 +9545,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -9554,7 +9554,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>11</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -10292,7 +10292,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -10301,7 +10301,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>10</real>
+											<real>12</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -10418,8 +10418,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>

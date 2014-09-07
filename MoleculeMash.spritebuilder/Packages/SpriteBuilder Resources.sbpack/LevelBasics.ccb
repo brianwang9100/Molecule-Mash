@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>52</integer>
+	<integer>53</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -78,8 +78,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>40</real>
-									<real>40</real>
+									<real>-39.16668701171875</real>
+									<real>87.500015258789062</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -404,8 +404,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>40</real>
-									<real>40</real>
+									<real>-40.833351135253906</real>
+									<real>89.16668701171875</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -922,10 +922,10 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>0.20000000298023224</real>
-									<real>0.69999998807907104</real>
-									<integer>2</integer>
-									<integer>2</integer>
+									<real>65</real>
+									<real>350</real>
+									<integer>0</integer>
+									<integer>0</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1074,7 +1074,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>GillSans</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1281,7 +1281,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>GillSans</string>
 							</dict>
 							<dict>
 								<key>name</key>
