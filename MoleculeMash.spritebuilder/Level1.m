@@ -157,6 +157,7 @@
 -(void)update:(CCTime)delta
 {
     [super update:delta];
+    
     if(!_transitionMode)
     {
         if (self.currentNumberOfAtoms == self.maxNumberOfAtoms)

@@ -56,6 +56,21 @@
     {
         NSString *atomString;
         
+        self.hydrogenButton = self.levelBasics.hydrogenButton;
+        self.lithiumButton = self.levelBasics.lithiumButton;
+        self.boronButton = self.levelBasics.boronButton;
+        self.carbonButton = self.levelBasics.carbonButton;
+        self.oxygenButton = self.levelBasics.oxygenButton;
+        self.chlorineButton = self.levelBasics.chlorineButton;
+        self.sodiumButton = self.levelBasics.sodiumButton;
+        self.phosphorousButton = self.levelBasics.phosphorousButton;
+        self.sulfurButton = self.levelBasics.sulfurButton;
+        self.bromineButton = self.levelBasics.bromineButton;
+        self.rubidiumButton = self.levelBasics.rubidiumButton;
+        self.fluorineButton = self.levelBasics.fluorineButton;
+        self.nitrogenButton = self.levelBasics.nitrogenButton;
+        self.potassiumButton  = self.levelBasics.potassiumButton;
+        
         if (self.levelBasics.trashTime)
         {
             [self removeAllAtoms];
@@ -160,21 +175,6 @@
             self.levelBasics.scrollView.atomList.rubidiumButton = FALSE;
             self.rubidiumButton = FALSE;
         }
-        
-        self.hydrogenButton = self.levelBasics.hydrogenButton;
-        self.lithiumButton = self.levelBasics.lithiumButton;
-        self.boronButton = self.levelBasics.boronButton;
-        self.carbonButton = self.levelBasics.carbonButton;
-        self.oxygenButton = self.levelBasics.oxygenButton;
-        self.chlorineButton = self.levelBasics.chlorineButton;
-        self.sodiumButton = self.levelBasics.sodiumButton;
-        self.phosphorousButton = self.levelBasics.phosphorousButton;
-        self.sulfurButton = self.levelBasics.sulfurButton;
-        self.bromineButton = self.levelBasics.bromineButton;
-        self.rubidiumButton = self.levelBasics.rubidiumButton;
-        self.fluorineButton = self.levelBasics.fluorineButton;
-        self.nitrogenButton = self.levelBasics.nitrogenButton;
-        self.potassiumButton  = self.levelBasics.potassiumButton;
     }
 }
 
@@ -204,7 +204,7 @@
     if (_nextXvalue > _grid.contentSize.width)
     {
         _nextXvalue = 50;
-        _nextYvalue += 50;
+        _nextYvalue += 75;
         if (_nextYvalue >= _grid.contentSize.height)
         {
             _maxedOutLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
