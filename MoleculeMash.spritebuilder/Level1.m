@@ -50,19 +50,19 @@
     
     self.arrow1 = [CCBReader load: @"Arrow"];
     self.arrow2 = [CCBReader load: @"ArrowDown"];
-    self.arrow1.position = ccp(self.levelBasics.scrollView.atomList.contentSize.height*.85, self.levelBasics.scrollView.atomList.contentSize.width*.5);
-    self.arrow2.position = ccp(self.levelBasics.scrollView.atomList.contentSize.height*.15, self.levelBasics.scrollView.atomList.contentSize.width*.5);
-    [self.levelBasics.scrollView.atomList addChild: self.arrow1];
-    [self.levelBasics.scrollView.atomList addChild: self.arrow2];
+    self.arrow1.position = ccp(40, self.contentSizeInPoints.height*.90);
+    self.arrow2.position = ccp(40, self.contentSizeInPoints.height*.10);
+    [self addChild: self.arrow1];
+    [self addChild: self.arrow2];
     
     [self loadGenericMessage:@"Tap the elements on the side\n to make the given atom!"];
-    [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:5];
+    [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
 }
 -(void) endObjective1
 {
     _transitionMode = YES;
     id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
     
     for (id e in self.listOfAtoms)
     {
@@ -70,7 +70,7 @@
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 2];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroChloricAcid" afterDelay: 2];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroCholricAcid" afterDelay: 2];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
     [self performSelector:@selector(objective2) withObject:nil afterDelay: 5];
 }
@@ -109,7 +109,7 @@
 {
     _transitionMode = YES;
     id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
     for (CCNode *e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];
@@ -139,7 +139,7 @@
 {
     _transitionMode = YES;
     id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
     for (CCNode *e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];

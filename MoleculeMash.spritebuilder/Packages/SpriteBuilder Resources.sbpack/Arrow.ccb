@@ -67,7 +67,7 @@
 									<key>value</key>
 									<array>
 										<real>0.0</real>
-										<real>0.0</real>
+										<real>20</real>
 									</array>
 								</dict>
 								<dict>
@@ -87,14 +87,16 @@
 									<key>value</key>
 									<array>
 										<real>0.0</real>
-										<real>20</real>
+										<real>0.0</real>
 									</array>
 								</dict>
 								<dict>
 									<key>easing</key>
 									<dict>
+										<key>opt</key>
+										<real>2</real>
 										<key>type</key>
-										<integer>1</integer>
+										<integer>4</integer>
 									</dict>
 									<key>name</key>
 									<string>position</string>
@@ -105,7 +107,7 @@
 									<key>value</key>
 									<array>
 										<real>0.0</real>
-										<real>0.0</real>
+										<real>20</real>
 									</array>
 								</dict>
 							</array>
@@ -121,8 +123,6 @@
 								<dict>
 									<key>easing</key>
 									<dict>
-										<key>opt</key>
-										<real>2</real>
 										<key>type</key>
 										<integer>13</integer>
 									</dict>
@@ -134,7 +134,7 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>1</real>
+										<real>1.2000000476837158</real>
 										<real>1</real>
 									</array>
 								</dict>
@@ -152,7 +152,7 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>1.2000000476837158</real>
+										<real>1</real>
 										<real>1</real>
 									</array>
 								</dict>
@@ -160,7 +160,7 @@
 									<key>easing</key>
 									<dict>
 										<key>type</key>
-										<integer>1</integer>
+										<integer>13</integer>
 									</dict>
 									<key>name</key>
 									<string>scale</string>
@@ -170,7 +170,7 @@
 									<integer>4</integer>
 									<key>value</key>
 									<array>
-										<real>1</real>
+										<real>1.2000000476837158</real>
 										<real>1</real>
 									</array>
 								</dict>
@@ -219,7 +219,7 @@
 								<key>value</key>
 								<array>
 									<real>0.5</real>
-									<real>-9</real>
+									<real>-15</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -256,7 +256,8 @@
 								<string>Text</string>
 								<key>value</key>
 								<array>
-									<string>SCROLL DOWN</string>
+									<string>SCROLL UP
+</string>
 									<false/>
 								</array>
 							</dict>
@@ -392,6 +393,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -425,7 +428,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>19.288888931274414</real>
+							<real>6.399998664855957</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -454,7 +457,7 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.2116357088088989</real>
+							<real>1.0179851055145264</real>
 							<real>1</real>
 							<false/>
 							<integer>0</integer>
@@ -614,7 +617,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.56666666269302368</real>
+			<real>0.30000001192092896</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

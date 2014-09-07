@@ -149,8 +149,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -169,8 +171,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -189,8 +193,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -209,8 +215,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -229,8 +237,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -249,8 +259,10 @@
 										<dict>
 											<key>easing</key>
 											<dict>
+												<key>opt</key>
+												<real>2</real>
 												<key>type</key>
-												<integer>1</integer>
+												<integer>4</integer>
 											</dict>
 											<key>name</key>
 											<string>color</string>
@@ -381,9 +393,9 @@
 								<string>Color3</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.074999995529651642</real>
-									<real>1</real>
+									<real>0.1442076712846756</real>
+									<real>0.71158468723297119</real>
+									<real>0.8557923436164856</real>
 									<real>0.25</real>
 								</array>
 							</dict>
@@ -464,7 +476,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>94.5</real>
+						<real>292.5</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -728,7 +740,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.85199999809265137</real>
+							<real>0.89999997615814209</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1138,7 +1150,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.71199995279312134</real>
+							<real>0.75999999046325684</real>
 							<integer>3</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1708,8 +1720,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -2058,7 +2068,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.20000000298023224</real>
+			<real>9</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
