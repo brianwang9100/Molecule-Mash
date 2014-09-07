@@ -191,7 +191,8 @@
     self.levelBasics.objectiveLabel.string = @"";
     
     self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
-    self.postGamePopUp.position = ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*.5);
+    self.postGamePopUp.positionType = CCPositionTypeNormalized;
+    self.postGamePopUp.position = ccp(.5,.5);
     self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
     self.postGamePopUp.time = (float) self.timeTaken;
     self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
