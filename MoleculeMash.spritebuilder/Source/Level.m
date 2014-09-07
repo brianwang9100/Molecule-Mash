@@ -260,22 +260,33 @@
 
 -(void) restart
 {
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.levelNumber) ]];
+    
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
+
 
 }
 
 -(void) quit
 {
-    
+    CCScene *mainScene = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
 -(void) levelSelect
 {
-    
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i", (self.levelNumber+1 )]];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
 -(void) nextLevel
 {
-    
+    CCScene *mainScene = [CCBReader loadAsScene:@"LevelSelect"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
+    [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
 -(void)loadParticleExplosionWithParticleName: (NSString *) particleName onObject: (CCNode*) object
