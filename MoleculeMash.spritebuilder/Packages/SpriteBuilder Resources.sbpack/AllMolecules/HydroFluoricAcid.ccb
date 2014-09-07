@@ -241,7 +241,7 @@
 						<string>Text</string>
 						<key>value</key>
 						<array>
-							<string>HydroFloricAcid
+							<string>HydroFluoricAcid
 HF</string>
 							<false/>
 						</array>
@@ -378,6 +378,8 @@ HF</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

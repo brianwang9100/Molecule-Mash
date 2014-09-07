@@ -18,6 +18,7 @@
 {
     [super didLoadFromCCB];
     [self setupArray];
+    self.currentNumberOfAtoms = 0;
     self.levelBasics.levelNumber = 1;
     self.totalNumberOfObjectives = 3;
     _transitionMode = NO;
@@ -119,6 +120,8 @@
     self.currentNumberOfAtoms = 0;
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 2;
+    self.nextXvalue = 50;
+    self.nextYvalue = 75;
     
     [self loadGenericMessage:@"Fill in the blank!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.30)];
     [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
@@ -135,7 +138,7 @@
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroBromicAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton, or Hydrogen atom" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton,\n or Hydrogen atom" afterDelay: 3];
     [self performSelector:@selector(objective3) withObject:nil afterDelay: 7];
 
 }
@@ -150,8 +153,11 @@
     
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:2];
     self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:2];
+    self.currentNumberOfAtoms = 0;
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 3;
+    self.nextXvalue = 50;
+    self.nextYvalue = 75;
 }
 
 -(void) endObjective3
