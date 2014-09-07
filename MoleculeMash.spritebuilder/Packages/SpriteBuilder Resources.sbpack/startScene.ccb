@@ -408,6 +408,8 @@
 								<real>0.25</real>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
