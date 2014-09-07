@@ -25,6 +25,7 @@
     _transitionMode = NO;
     _resetTransitionMode = NO;
     _postGamePopUp.level = self;
+    self.levelNumber = 1;
     
     [self performSelector:@selector(startGame) withObject:nil afterDelay:1.5];
 }
