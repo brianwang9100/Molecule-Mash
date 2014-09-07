@@ -9398,6 +9398,40 @@
 							<dict>
 								<key>UUID</key>
 								<integer>57</integer>
+								<key>animatedProperties</key>
+								<dict>
+									<key>0</key>
+									<dict>
+										<key>skew</key>
+										<dict>
+											<key>keyframes</key>
+											<array>
+												<dict>
+													<key>easing</key>
+													<dict>
+														<key>type</key>
+														<integer>1</integer>
+													</dict>
+													<key>name</key>
+													<string>skew</string>
+													<key>time</key>
+													<real>1.5</real>
+													<key>type</key>
+													<integer>8</integer>
+													<key>value</key>
+													<array>
+														<real>0.0</real>
+														<real>0.0</real>
+													</array>
+												</dict>
+											</array>
+											<key>name</key>
+											<string>skew</string>
+											<key>type</key>
+											<integer>8</integer>
+										</dict>
+									</dict>
+								</dict>
 								<key>baseClass</key>
 								<string>CCBFile</string>
 								<key>children</key>
@@ -9454,6 +9488,22 @@
 										<string>Degrees</string>
 										<key>value</key>
 										<real>35</real>
+									</dict>
+									<dict>
+										<key>baseValue</key>
+										<array>
+											<real>0.0</real>
+											<real>0.0</real>
+										</array>
+										<key>name</key>
+										<string>skew</string>
+										<key>type</key>
+										<string>FloatXY</string>
+										<key>value</key>
+										<array>
+											<real>0.0</real>
+											<real>0.0</real>
+										</array>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -10708,15 +10758,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>4</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>5.3828125</real>
 			<key>position</key>
-			<real>4</real>
+			<real>3.7333333492279053</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

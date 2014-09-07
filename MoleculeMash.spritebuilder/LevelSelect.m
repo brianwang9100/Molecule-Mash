@@ -32,7 +32,7 @@
     _layout1.position = ccp(-self.contentSize.width*.5, .85);
     
     id contentNodeDrop = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
-    id contentNodeBounce = [CCActionEaseElasticIn actionWithAction:contentNodeDrop period:.4 ];
+    id contentNodeBounce = [CCActionEaseElasticOut actionWithAction:contentNodeDrop period:.4 ];
     [_layout1 runAction: contentNodeBounce];
     
     
@@ -42,7 +42,7 @@
     _layout2.position = ccp(self.contentSize.width*1.5, .65);
     
     id contentNodeDrop1 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.65)];
-    id contentNodeBounce1 = [CCActionEaseElasticIn actionWithAction:contentNodeDrop1 period:.4];
+    id contentNodeBounce1 = [CCActionEaseElasticOut actionWithAction:contentNodeDrop1 period:.4];
     [_layout2 runAction: contentNodeBounce1];
     
     
@@ -52,7 +52,7 @@
     _layout3.position = ccp(-self.contentSize.width*.5, .45);
     
     id contentNodeDrop2 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.45)];
-    id contentNodeBounce2 = [CCActionEaseElasticIn actionWithAction:contentNodeDrop2 period:.4];
+    id contentNodeBounce2 = [CCActionEaseElasticOut actionWithAction:contentNodeDrop2 period:.4];
     [_layout3 runAction: contentNodeBounce2];
     
     
@@ -62,7 +62,7 @@
     _layout4.position = ccp(self.contentSize.width*1.5, .25);
     
     id contentNodeDrop3 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.25)];
-    id contentNodeBounce3 = [CCActionEaseElasticIn actionWithAction:contentNodeDrop3 period:.4];
+    id contentNodeBounce3 = [CCActionEaseElasticOut actionWithAction:contentNodeDrop3 period:.4];
     [_layout4 runAction: contentNodeBounce3];
     
     

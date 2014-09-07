@@ -48,21 +48,31 @@
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 1;
     
+    self.arrow1 = [CCBReader load: @"Arrow"];
+    self.arrow2 = [CCBReader load: @"ArrowDown"];
+    self.arrow1.position = ccp(40, self.contentSizeInPoints.height*.90);
+    self.arrow2.position = ccp(40, self.contentSizeInPoints.height*.10);
+    [self addChild: self.arrow1];
+    [self addChild: self.arrow2];
+    
+    [self loadGenericMessage:@"Tap the elements on the side\n to make the given atom!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.30)];
+    [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
 }
 -(void) endObjective1
 {
     _transitionMode = YES;
-    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
+    id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+    
     for (id e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];
     }
     
-    [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroChloricAcid" afterDelay: 1];
+    [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 2];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroChloricAcid" afterDelay: 2];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
-    [self performSelector:@selector(objective2) withObject:nil afterDelay: 5];
+    [self performSelector:@selector(objective2) withObject:nil afterDelay: 7];
 }
 
 -(void) loadObjectiveMolecule: (NSString*) moleculeString
@@ -70,55 +80,74 @@
     self.currentMolecule = [CCBReader load: moleculeString];
     self.currentMolecule.position = ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5);
     [self.grid addChild: self.currentMolecule];
+    [self loadParticleExplosionWithParticleNameFromGrid:@"BigParticles" onObject: self.currentMolecule];
+    [self loadParticleExplosionWithParticleNameFromGrid:@"Particles2" onObject: self.currentMolecule];
 }
 
 -(void) loadGenericMessage: (NSString *) message
 {
     _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
     _genericLabel.label.string = message;
-    _genericLabel.position = ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5);
+    _genericLabel.position = ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.70);
     _genericLabel.opacity = 0;
     [self.grid addChild:_genericLabel];
     
-    id labelFadeIn = [CCActionFadeIn actionWithDuration:.5];
+    id labelFadeIn = [CCActionFadeIn actionWithDuration:1];
     [_genericLabel runAction: labelFadeIn];
 }
 
+-(void) loadGenericMessage: (NSString *) message withPosition: (CGPoint) position
+{
+    _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
+    _genericLabel.label.string = message;
+    _genericLabel.position = position;
+    _genericLabel.opacity = 0;
+    [self.grid addChild:_genericLabel];
+    
+    id labelFadeIn = [CCActionFadeIn actionWithDuration:1];
+    [_genericLabel runAction: labelFadeIn];
+}
 -(void) objective2
 {
+    _transitionMode = NO;
     [self.currentMolecule removeFromParent];
     self.currentMolecule = nil;
     [_genericLabel removeFromParent];
     _genericLabel = nil;
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:1];
     self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:1];
+    self.currentNumberOfAtoms = 0;
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 2;
+    
+    [self loadGenericMessage:@"Fill in the blank!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.30)];
+    [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
 }
 -(void) endObjective2
 {
     _transitionMode = YES;
     id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
-    for (id e in self.listOfAtoms)
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+    for (CCNode *e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroBromicAcid" afterDelay: 1];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroBromicAcid" afterDelay: 1];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton, or Hydrogen atom" afterDelay: 3];
-    [self performSelector:@selector(objective3) withObject:nil afterDelay: 5];
+    [self performSelector:@selector(objective3) withObject:nil afterDelay: 7];
 
 }
 
 -(void) objective3
 {
+    _transitionMode = NO;
     [self.currentMolecule removeFromParent];
     self.currentMolecule = nil;
     [_genericLabel removeFromParent];
     _genericLabel = nil;
-    _transitionMode = NO;
+    
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:2];
     self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:2];
     self.maxNumberOfAtoms = 2;
@@ -129,16 +158,16 @@
 {
     _transitionMode = YES;
     id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
-    for (id e in self.listOfAtoms)
+    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+    for (CCNode *e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroFluoricAcid" afterDelay: 1];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroFluoricAcid" afterDelay: 1];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"The more protons" afterDelay: 3];
-    [self performSelector:@selector(endGame) withObject:nil afterDelay: 5];
+    [self performSelector:@selector(endGame) withObject:nil afterDelay: 7];
 }
 
 -(void) endGame
@@ -151,14 +180,22 @@
     self.levelBasics.levelTitleLabel.string = @"";
     self.levelBasics.objectiveLabel.string = @"";
     
-    //loadEndGamePopUp
+    self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
+    self.postGamePopUp.position = ccp(.5,.5);
+    self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
+    self.postGamePopUp.time = (float) self.timeTaken;
+    self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
+    self.postGamePopUp.beginAnimation = YES;
+    
 }
 
 -(void)update:(CCTime)delta
 {
     [super update:delta];
+    
     if(!_transitionMode)
     {
+        self.timeTaken += delta;
         if (self.currentNumberOfAtoms == self.maxNumberOfAtoms)
         {
             switch (self.currentObjectiveNumber)
@@ -234,21 +271,26 @@
                     break;
             }
         }
-        else if (self.currentNumberOfAtoms > self.maxNumberOfAtoms && !_resetTransitionMode)
+        else if (self.currentNumberOfAtoms >= self.maxNumberOfAtoms && !_resetTransitionMode)
         {
             _genericLabel = nil;
             _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
             _genericLabel.label.string = @"WRONG COMBINATION!";
-            _genericLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
-            id labelMoveTo = [CCActionMoveTo actionWithDuration:.5  position: ccp(self.contentSize.width*.5, self.contentSize.height*.5)];
+            _genericLabel.position = ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*1.2);
+            id labelMoveTo = [CCActionMoveTo actionWithDuration:1.5  position: ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*.5)];
             id labelBounceOut = [CCActionEaseElasticInOut actionWithAction: labelMoveTo period: .4];
             [self addChild: _genericLabel];
             [ _genericLabel runAction: labelBounceOut];
             
             _resetTransitionMode = YES;
             self.userInteractionEnabled = FALSE;
-            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
-            [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:1];
+            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:4];
+            [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:4];
+            
+            self.nextXvalue = 50;
+            self.nextYvalue = 75;
+            
+        
         }
     }
 }

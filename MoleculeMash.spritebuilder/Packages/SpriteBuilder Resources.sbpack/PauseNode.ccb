@@ -369,7 +369,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>GillSans</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -405,7 +405,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>10</real>
+									<real>0.0</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -441,9 +441,9 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
 								</array>
 							</dict>
 							<dict>
@@ -454,7 +454,7 @@
 								<key>value</key>
 								<array>
 									<real>1</real>
-									<integer>0</integer>
+									<integer>1</integer>
 								</array>
 							</dict>
 							<dict>
@@ -496,6 +496,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -612,7 +614,7 @@
 								<string>String</string>
 								<key>value</key>
 								<array>
-									<string>MAINMENU</string>
+									<string>QUIT</string>
 									<false/>
 								</array>
 							</dict>
@@ -721,7 +723,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>GillSans</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -793,9 +795,9 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
 								</array>
 							</dict>
 							<dict>
@@ -1073,7 +1075,7 @@
 								<key>type</key>
 								<string>FontTTF</string>
 								<key>value</key>
-								<string>Helvetica</string>
+								<string>GillSans</string>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -1145,9 +1147,9 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>1</real>
+									<real>1</real>
+									<real>1</real>
 								</array>
 							</dict>
 							<dict>
@@ -1200,8 +1202,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>

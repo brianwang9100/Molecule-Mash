@@ -12,9 +12,6 @@
 @implementation Level
 {
     GenericLabel *_maxedOutLabel;
-    
-    int _nextXvalue;
-    int _nextYvalue;
 
 }
 
@@ -28,9 +25,11 @@
     self.levelBasics.objectiveLabel.string = @"";
     self.backgroundLabel.string = @"";
     self.didLaunch = NO;
+    self.listOfAtoms = [NSMutableArray arrayWithObjects: nil];
+    self.timeTaken = 0;
     
-    _nextXvalue = 50;
-    _nextYvalue = 50;
+    self.nextXvalue = 50;
+    self.nextYvalue = 75;
     
     
     self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -55,6 +54,21 @@
     if (self.gameStarted && !self.didLaunch)
     {
         NSString *atomString;
+        
+        self.hydrogenButton = self.levelBasics.hydrogenButton;
+        self.lithiumButton = self.levelBasics.lithiumButton;
+        self.boronButton = self.levelBasics.boronButton;
+        self.carbonButton = self.levelBasics.carbonButton;
+        self.oxygenButton = self.levelBasics.oxygenButton;
+        self.chlorineButton = self.levelBasics.chlorineButton;
+        self.sodiumButton = self.levelBasics.sodiumButton;
+        self.phosphorousButton = self.levelBasics.phosphorousButton;
+        self.sulfurButton = self.levelBasics.sulfurButton;
+        self.bromineButton = self.levelBasics.bromineButton;
+        self.rubidiumButton = self.levelBasics.rubidiumButton;
+        self.fluorineButton = self.levelBasics.fluorineButton;
+        self.nitrogenButton = self.levelBasics.nitrogenButton;
+        self.potassiumButton  = self.levelBasics.potassiumButton;
         
         if (self.levelBasics.trashTime)
         {
@@ -160,21 +174,6 @@
             self.levelBasics.scrollView.atomList.rubidiumButton = FALSE;
             self.rubidiumButton = FALSE;
         }
-        
-        self.hydrogenButton = self.levelBasics.hydrogenButton;
-        self.lithiumButton = self.levelBasics.lithiumButton;
-        self.boronButton = self.levelBasics.boronButton;
-        self.carbonButton = self.levelBasics.carbonButton;
-        self.oxygenButton = self.levelBasics.oxygenButton;
-        self.chlorineButton = self.levelBasics.chlorineButton;
-        self.sodiumButton = self.levelBasics.sodiumButton;
-        self.phosphorousButton = self.levelBasics.phosphorousButton;
-        self.sulfurButton = self.levelBasics.sulfurButton;
-        self.bromineButton = self.levelBasics.bromineButton;
-        self.rubidiumButton = self.levelBasics.rubidiumButton;
-        self.fluorineButton = self.levelBasics.fluorineButton;
-        self.nitrogenButton = self.levelBasics.nitrogenButton;
-        self.potassiumButton  = self.levelBasics.potassiumButton;
     }
 }
 
@@ -199,26 +198,27 @@
 {
     object.position = ccp(_nextXvalue, _nextYvalue);
     [_grid addChild: object];
+    [self loadParticleExplosionWithParticleNameFromGrid:@"Particles2" onObject:object];
     _nextXvalue += 100;
     
     if (_nextXvalue > _grid.contentSize.width)
     {
         _nextXvalue = 50;
-        _nextYvalue += 50;
+        _nextYvalue += 75;
         if (_nextYvalue >= _grid.contentSize.height)
         {
             _maxedOutLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
-            _maxedOutLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
-            id labelMoveTo = [CCActionMoveTo actionWithDuration:.5  position: ccp(self.contentSize.width*.5, self.contentSize.height*.5)];
+            _maxedOutLabel.position = ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*1.2);
+            id labelMoveTo = [CCActionMoveTo actionWithDuration:1.5  position: ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*.5)];
             id labelBounceOut = [CCActionEaseElasticInOut actionWithAction: labelMoveTo period: .4];
             [self addChild:_maxedOutLabel];
             [_maxedOutLabel runAction: labelBounceOut];
-            
-            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
-            [self performSelector:@selector(removeMaxedOutLabel) withObject:nil afterDelay:1];
+            self.userInteractionEnabled = FALSE;
+            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:4];
+            [self performSelector:@selector(removeMaxedOutLabel) withObject:nil afterDelay:4];
             
             _nextXvalue = 50;
-            _nextYvalue = 50;
+            _nextYvalue = 75;
             
         }
     }
@@ -232,6 +232,7 @@
         [_maxedOutLabel removeFromParent];
         _maxedOutLabel = nil;
     }
+    self.userInteractionEnabled = TRUE;
 }
 -(void) launchAtom: (NSString*) atomString
 {
@@ -246,6 +247,57 @@
     _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;
+    
+    if (self.arrow1 != nil || self.arrow2 != nil)
+    {
+        [self.arrow1 removeFromParent];
+        [self.arrow2 removeFromParent];
+        self.arrow1 = nil;
+        self.arrow2 = nil;
+        
+    }
 }
 
+-(void) restart
+{
+
+}
+
+-(void) quit
+{
+    
+}
+
+-(void) levelSelect
+{
+    
+}
+
+-(void) nextLevel
+{
+    
+}
+
+-(void)loadParticleExplosionWithParticleName: (NSString *) particleName onObject: (CCNode*) object
+{
+    @synchronized(self)
+    {
+
+        CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
+        explosion.autoRemoveOnFinish = TRUE;
+        explosion.position = [self convertToWorldSpace:object.position ];
+        [self addChild: explosion];
+    }
+}
+
+-(void)loadParticleExplosionWithParticleNameFromGrid: (NSString *) particleName onObject: (CCNode*) object
+{
+    @synchronized(self)
+    {
+        CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
+        explosion.autoRemoveOnFinish = TRUE;
+        explosion.position = object.position;
+        [self.grid addChild: explosion];
+    }
+}
 @end

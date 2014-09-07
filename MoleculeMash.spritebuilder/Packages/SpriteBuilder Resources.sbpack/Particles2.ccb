@@ -110,8 +110,8 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>60</real>
-					<real>60</real>
+					<real>10</real>
+					<real>10</real>
 				</array>
 			</dict>
 			<dict>
@@ -120,7 +120,7 @@
 				<key>type</key>
 				<string>Float</string>
 				<key>value</key>
-				<real>100000</real>
+				<real>300</real>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -128,7 +128,7 @@
 				<key>type</key>
 				<string>Float</string>
 				<key>value</key>
-				<real>1</real>
+				<real>0.10000000149011612</real>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -136,7 +136,7 @@
 				<key>type</key>
 				<string>Integer</string>
 				<key>value</key>
-				<integer>500</integer>
+				<integer>360</integer>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -145,8 +145,8 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
-					<real>0.0</real>
+					<real>0.25</real>
+					<real>0.25</real>
 				</array>
 			</dict>
 			<dict>
@@ -156,8 +156,8 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>0.0</real>
-					<real>10</real>
+					<real>40</real>
+					<real>25</real>
 				</array>
 			</dict>
 			<dict>
@@ -168,7 +168,7 @@
 				<key>value</key>
 				<array>
 					<real>0.0</real>
-					<real>20</real>
+					<real>0.0</real>
 				</array>
 			</dict>
 			<dict>
@@ -179,7 +179,7 @@
 				<key>value</key>
 				<array>
 					<real>0.0</real>
-					<real>0.0</real>
+					<real>180</real>
 				</array>
 			</dict>
 			<dict>
@@ -190,7 +190,7 @@
 				<key>value</key>
 				<array>
 					<real>0.0</real>
-					<real>0.0</real>
+					<real>180</real>
 				</array>
 			</dict>
 			<dict>
@@ -200,7 +200,7 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>90</real>
+					<real>0.0</real>
 					<real>360</real>
 				</array>
 			</dict>
@@ -212,16 +212,16 @@
 				<key>value</key>
 				<array>
 					<array>
-						<real>0.57138466835021973</real>
-						<real>0.57480472326278687</real>
-						<real>0.57250028848648071</real>
-						<real>0.69999998807907104</real>
+						<real>1</real>
+						<real>1</real>
+						<real>0.0</real>
+						<real>1</real>
 					</array>
 					<array>
-						<real>0.93170833587646484</real>
-						<real>0.94695991277694702</real>
-						<real>0.82745838165283203</real>
-						<real>0.86000001430511475</real>
+						<real>0.20427179336547852</real>
+						<real>0.33980894088745117</real>
+						<real>0.0</real>
+						<real>0.0</real>
 					</array>
 				</array>
 			</dict>
@@ -233,16 +233,16 @@
 				<key>value</key>
 				<array>
 					<array>
-						<real>0.83255785703659058</real>
-						<real>0.89539515972137451</real>
-						<real>0.028460411354899406</real>
-						<real>0.61000001430511475</real>
+						<real>1</real>
+						<real>0.0</real>
+						<real>1</real>
+						<real>1</real>
 					</array>
 					<array>
-						<real>0.20832681655883789</real>
-						<real>0.99195283651351929</real>
+						<real>0.0</real>
+						<real>0.99143940210342407</real>
 						<real>1</real>
-						<real>1</real>
+						<real>0.0</real>
 					</array>
 				</array>
 			</dict>
@@ -253,7 +253,7 @@
 				<string>Blendmode</string>
 				<key>value</key>
 				<array>
-					<integer>775</integer>
+					<integer>1</integer>
 					<integer>1</integer>
 				</array>
 			</dict>
@@ -283,7 +283,7 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>100</real>
+					<real>300</real>
 					<real>0.0</real>
 				</array>
 			</dict>
@@ -305,7 +305,7 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>-1000</real>
+					<real>0.0</real>
 					<real>0.0</real>
 				</array>
 			</dict>
@@ -315,7 +315,7 @@
 				<key>type</key>
 				<string>Texture</string>
 				<key>value</key>
-				<string>ccbResources/ccbParticleMagic.png</string>
+				<string>ccbResources/ccbParticleStars.png</string>
 			</dict>
 		</array>
 		<key>selected</key>
