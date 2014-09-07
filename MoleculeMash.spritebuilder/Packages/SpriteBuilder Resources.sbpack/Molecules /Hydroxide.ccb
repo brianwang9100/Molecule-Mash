@@ -1789,8 +1789,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-63</real>
-							<real>-136</real>
+							<real>-1</real>
+							<real>52</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1818,8 +1818,6 @@
 						<string>Elements/Hydrogen.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
