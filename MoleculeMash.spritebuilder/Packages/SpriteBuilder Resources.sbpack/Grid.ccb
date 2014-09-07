@@ -214,58 +214,14 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>0.3333333432674408</real>
-									<key>type</key>
-									<integer>6</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>1</real>
-										<real>0.0</real>
-										<real>1</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>opt</key>
-										<real>2</real>
-										<key>type</key>
-										<integer>4</integer>
-									</dict>
-									<key>name</key>
-									<string>color</string>
-									<key>time</key>
 									<real>0.66666668653488159</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
 									<array>
+										<real>1</real>
+										<real>1</real>
 										<real>0.0</real>
-										<real>1</real>
-										<real>0.0</real>
-										<real>1</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>opt</key>
-										<real>2</real>
-										<key>type</key>
-										<integer>4</integer>
-									</dict>
-									<key>name</key>
-									<string>color</string>
-									<key>time</key>
-									<real>1</real>
-									<key>type</key>
-									<integer>6</integer>
-									<key>value</key>
-									<array>
-										<real>0.0</real>
-										<real>1</real>
-										<real>1</real>
 										<real>1</real>
 									</array>
 								</dict>
@@ -286,6 +242,50 @@
 									<key>value</key>
 									<array>
 										<real>0.0</real>
+										<real>1</real>
+										<real>0.0</real>
+										<real>1</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>opt</key>
+										<real>2</real>
+										<key>type</key>
+										<integer>4</integer>
+									</dict>
+									<key>name</key>
+									<string>color</string>
+									<key>time</key>
+									<real>2</real>
+									<key>type</key>
+									<integer>6</integer>
+									<key>value</key>
+									<array>
+										<real>0.0</real>
+										<real>1</real>
+										<real>1</real>
+										<real>1</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>opt</key>
+										<real>2</real>
+										<key>type</key>
+										<integer>4</integer>
+									</dict>
+									<key>name</key>
+									<string>color</string>
+									<key>time</key>
+									<real>2.6666667461395264</real>
+									<key>type</key>
+									<integer>6</integer>
+									<key>value</key>
+									<array>
+										<real>0.0</real>
 										<real>0.0</real>
 										<real>1</real>
 										<real>1</real>
@@ -302,7 +302,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>1.6666666269302368</real>
+									<real>3.3333332538604736</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -322,7 +322,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>2</real>
+									<real>4</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -429,8 +429,8 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
+							<real>0.020000001415610313</real>
 							<real>0.0</real>
-							<real>0.080000162124633789</real>
 							<real>0.25</real>
 						</array>
 					</dict>
@@ -441,6 +441,17 @@
 						<string>Float</string>
 						<key>value</key>
 						<real>0.25</real>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>blendFunc</string>
+						<key>type</key>
+						<string>Blendmode</string>
+						<key>value</key>
+						<array>
+							<integer>1</integer>
+							<integer>1</integer>
+						</array>
 					</dict>
 				</array>
 				<key>seqExpanded</key>
@@ -486,8 +497,8 @@
 				<string>Size</string>
 				<key>value</key>
 				<array>
-					<real>250</real>
-					<real>450</real>
+					<real>200</real>
+					<real>350</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>
@@ -499,7 +510,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>0.0</real>
+					<real>0.5</real>
 					<real>0.5</real>
 				</array>
 			</dict>
@@ -517,8 +528,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -568,13 +577,13 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>2</real>
+			<real>4</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.9333332777023315</real>
+			<real>0.066666670143604279</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
