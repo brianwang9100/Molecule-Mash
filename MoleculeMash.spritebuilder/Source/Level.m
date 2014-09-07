@@ -24,8 +24,6 @@
     self.currentObjectiveNumber = 0;
     self.gameStarted = FALSE;
     self.currentNumberOfAtoms = 0;
-    self.levelBasics.levelTitleLabel.string = @"";
-    self.levelBasics.objectiveLabel.string = @"";
     
     _nextXvalue = 50;
     _nextXvalue = 50;
@@ -186,7 +184,7 @@
     
     if (_nextXvalue > _grid.contentSize.width)
     {
-        _nextXvalue = 0;
+        _nextXvalue = 50;
         _nextYvalue += 100;
         if (_nextYvalue >= _grid.contentSize.height)
         {
@@ -205,6 +203,8 @@
             
         }
     }
+    
+    [_grid addChild: object];
 }
 
 -(void) removeMaxedOutLabel
@@ -220,9 +220,8 @@
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
-    _currentAtom.scale = .75;
     [_listOfAtoms addObject:_currentAtom];
-    [self addToGrid: _currentAtom];
+    
     _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;

@@ -214,33 +214,33 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>0.66666668653488159</real>
-									<key>type</key>
-									<integer>6</integer>
-									<key>value</key>
-									<array>
-										<real>1</real>
-										<real>1</real>
-										<real>0.0</real>
-										<real>1</real>
-									</array>
-								</dict>
-								<dict>
-									<key>easing</key>
-									<dict>
-										<key>opt</key>
-										<real>2</real>
-										<key>type</key>
-										<integer>4</integer>
-									</dict>
-									<key>name</key>
-									<string>color</string>
-									<key>time</key>
 									<real>1.3333333730697632</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
 									<array>
+										<real>1</real>
+										<real>1</real>
+										<real>0.0</real>
+										<real>1</real>
+									</array>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>opt</key>
+										<real>2</real>
+										<key>type</key>
+										<integer>4</integer>
+									</dict>
+									<key>name</key>
+									<string>color</string>
+									<key>time</key>
+									<real>2.3333332538604736</real>
+									<key>type</key>
+									<integer>6</integer>
+									<key>value</key>
+									<array>
 										<real>0.0</real>
 										<real>1</real>
 										<real>0.0</real>
@@ -258,7 +258,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>2</real>
+									<real>3.6666667461395264</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -280,7 +280,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>2.6666667461395264</real>
+									<real>5.3333334922790527</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -302,7 +302,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>3.3333332538604736</real>
+									<real>6.6666665077209473</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -322,7 +322,7 @@
 									<key>name</key>
 									<string>color</string>
 									<key>time</key>
-									<real>4</real>
+									<real>8</real>
 									<key>type</key>
 									<integer>6</integer>
 									<key>value</key>
@@ -429,8 +429,8 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>0.020000001415610313</real>
 							<real>0.0</real>
+							<real>0.40499973297119141</real>
 							<real>0.25</real>
 						</array>
 					</dict>
@@ -454,8 +454,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -579,13 +577,13 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>4</real>
+			<real>8</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>1.5078125</real>
 			<key>position</key>
-			<real>0.066666670143604279</real>
+			<real>7.4000000953674316</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

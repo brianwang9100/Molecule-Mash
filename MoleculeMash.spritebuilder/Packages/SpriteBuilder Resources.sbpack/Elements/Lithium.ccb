@@ -1260,8 +1260,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-0.66324615478515625</real>
-							<real>6.6324601173400879</real>
+							<real>-4.6632461547851562</real>
+							<real>0.6324615478515625</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1520,8 +1520,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1594,6 +1592,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -1641,7 +1641,7 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
 			<real>4</real>
 			<key>name</key>
