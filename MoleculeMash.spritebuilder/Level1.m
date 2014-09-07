@@ -11,6 +11,7 @@
 @implementation Level1
 {
     BOOL _transitionMode;
+    BOOL _resetTransitionMode;
     GenericLabel * _genericLabel;
 }
 -(void) didLoadFromCCB
@@ -20,6 +21,7 @@
     self.levelBasics.levelNumber = 1;
     self.totalNumberOfObjectives = 3;
     _transitionMode = NO;
+    _resetTransitionMode = NO;
     
     [self performSelector:@selector(startGame) withObject:nil afterDelay:1.5];
 }
@@ -27,20 +29,22 @@
 -(void) startGame
 {
     self.gameStarted = YES;
-    self.levelBasics.levelTitleLabel.string = @"";
-    
+    self.levelBasics.levelTitleLabel.string = @"Level 1 - Acids";
     [self objective1];
 }
 
 -(void) setupArray
 {
-    self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Hydrochloric Acid (HCl)", @"Hydrobromic Acid (HBr)", @"Hydrofluoric Acid (HF)", nil];
+    self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Hydrochloric Acid (HCl)", @"Hydrobromic Acid (_Br)", @"Hydrofluoric Acid (_F)", nil];
+    self.objectiveFinalMoleculeForm = [NSMutableArray arrayWithObjects: @"HCl", @"_Br", @"_F", nil];
+    
 }
 
 -(void) objective1
 {
     _transitionMode = NO;
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:0];
+    self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:0];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 1;
     
@@ -57,7 +61,7 @@
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroChloricAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage) withObject:@"Easy Right?" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
     [self performSelector:@selector(objective2) withObject:nil afterDelay: 5];
 }
 
@@ -87,6 +91,7 @@
     [_genericLabel removeFromParent];
     _genericLabel = nil;
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:1];
+    self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:1];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 2;
 }
@@ -102,7 +107,7 @@
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroBromicAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage) withObject:@"Acids usually have a single proton, or Hydrogen atom" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton, or Hydrogen atom" afterDelay: 3];
     [self performSelector:@selector(objective3) withObject:nil afterDelay: 5];
 
 }
@@ -115,6 +120,7 @@
     _genericLabel = nil;
     _transitionMode = NO;
     self.levelBasics.objectiveLabel.string = [self.objectiveFinalMolecule objectAtIndex:2];
+    self.backgroundLabel.string = [self.objectiveFinalMoleculeForm objectAtIndex:2];
     self.maxNumberOfAtoms = 2;
     self.currentObjectiveNumber = 3;
 }
@@ -131,7 +137,7 @@
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroFluoricAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage) withObject:@"The more protons" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"The more protons" afterDelay: 3];
     [self performSelector:@selector(endGame) withObject:nil afterDelay: 5];
 }
 
@@ -141,6 +147,9 @@
     self.currentMolecule = nil;
     [_genericLabel removeFromParent];
     _genericLabel = nil;
+    self.backgroundLabel.string = @"";
+    self.levelBasics.levelTitleLabel.string = @"";
+    self.levelBasics.objectiveLabel.string = @"";
     
     //loadEndGamePopUp
 }
@@ -225,16 +234,19 @@
                     break;
             }
         }
-        else if (self.currentNumberOfAtoms > self.maxNumberOfAtoms)
+        else if (self.currentNumberOfAtoms > self.maxNumberOfAtoms && !_resetTransitionMode)
         {
-             _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
-             _genericLabel.label.string = @"WRONG COMBINATION!";
-             _genericLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
+            _genericLabel = nil;
+            _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
+            _genericLabel.label.string = @"WRONG COMBINATION!";
+            _genericLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
             id labelMoveTo = [CCActionMoveTo actionWithDuration:.5  position: ccp(self.contentSize.width*.5, self.contentSize.height*.5)];
             id labelBounceOut = [CCActionEaseElasticInOut actionWithAction: labelMoveTo period: .4];
             [self addChild: _genericLabel];
             [ _genericLabel runAction: labelBounceOut];
             
+            _resetTransitionMode = YES;
+            self.userInteractionEnabled = FALSE;
             [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
             [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:1];
         }
@@ -253,5 +265,7 @@
         [ _genericLabel removeFromParent];
          _genericLabel = nil;
     }
+    _resetTransitionMode = NO;
+    self.userInteractionEnabled = TRUE;
 }
 @end

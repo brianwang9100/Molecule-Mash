@@ -40,11 +40,13 @@
 @property (assign, nonatomic) int currentNumberOfAtoms;
 @property (strong, nonatomic) CCNode *grid;
 @property (strong, nonatomic) CCNode *currentMolecule;
+@property (strong, nonatomic) CCLabelTTF *backgroundLabel;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
 @property (strong, nonatomic) NSMutableArray *listOfAtoms;
 @property (strong, nonatomic) NSMutableArray *objectiveFinalMolecule;
+@property (strong, nonatomic) NSMutableArray *objectiveFinalMoleculeForm;
 
 @property (assign, nonatomic) BOOL  hydrogenButton;
 @property (assign, nonatomic) BOOL  lithiumButton;

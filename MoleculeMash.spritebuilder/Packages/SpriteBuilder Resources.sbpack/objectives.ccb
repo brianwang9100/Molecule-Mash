@@ -3580,7 +3580,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3589,8 +3589,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -4327,7 +4327,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -4336,8 +4336,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -5074,7 +5074,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5083,8 +5083,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -5821,7 +5821,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5830,8 +5830,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -6568,7 +6568,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -6577,8 +6577,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -7315,7 +7315,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -7324,8 +7324,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -8062,7 +8062,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8071,8 +8071,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -8809,7 +8809,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8818,8 +8818,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -9427,8 +9427,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>24.348709106445312</real>
-											<real>18.648683547973633</real>
+											<real>27.348709106445312</real>
+											<real>26.648683547973633</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -9449,6 +9449,14 @@
 									</dict>
 									<dict>
 										<key>name</key>
+										<string>rotation</string>
+										<key>type</key>
+										<string>Degrees</string>
+										<key>value</key>
+										<real>35</real>
+									</dict>
+									<dict>
+										<key>name</key>
 										<string>ccbFile</string>
 										<key>type</key>
 										<string>CCBFile</string>
@@ -9456,8 +9464,6 @@
 										<string>Elements/Lithium.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -9558,7 +9564,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -9567,8 +9573,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -10305,7 +10311,7 @@
 										<key>type</key>
 										<string>Check</string>
 										<key>value</key>
-										<false/>
+										<true/>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -10314,8 +10320,8 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>50</real>
+											<real>50</real>
 											<integer>0</integer>
 											<integer>0</integer>
 										</array>
@@ -10412,6 +10418,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -10704,13 +10712,13 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>4</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.5</real>
+			<real>4</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

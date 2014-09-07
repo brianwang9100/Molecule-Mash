@@ -24,9 +24,12 @@
     self.currentObjectiveNumber = 0;
     self.gameStarted = FALSE;
     self.currentNumberOfAtoms = 0;
+    self.levelBasics.levelTitleLabel.string = @"";
+    self.levelBasics.objectiveLabel.string = @"";
+    self.backgroundLabel.string = @"";
     
-    _nextXvalue = 50;
-    _nextXvalue = 50;
+    _nextXvalue = 100;
+    _nextXvalue = 100;
     
     
     self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -185,7 +188,7 @@
     if (_nextXvalue > _grid.contentSize.width)
     {
         _nextXvalue = 50;
-        _nextYvalue += 100;
+        _nextYvalue += 50;
         if (_nextYvalue >= _grid.contentSize.height)
         {
             _maxedOutLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
@@ -198,13 +201,11 @@
             [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
             [self performSelector:@selector(removeMaxedOutLabel) withObject:nil afterDelay:1];
             
-            _nextXvalue = 50;
-            _nextYvalue = 50;
+            _nextXvalue = 100;
+            _nextYvalue = 100;
             
         }
     }
-    
-    [_grid addChild: object];
 }
 
 -(void) removeMaxedOutLabel
@@ -220,8 +221,10 @@
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
+    _currentAtom.atomLabel.visible = TRUE;
+    _currentAtom.scale = .75;
     [_listOfAtoms addObject:_currentAtom];
-    
+    [self addToGrid: _currentAtom];
     _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;
