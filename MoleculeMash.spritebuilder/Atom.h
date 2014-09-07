@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface Atom : CCNode
+@property (strong, nonatomic) CCLabelTTF *atomLabel;
 
 @end
