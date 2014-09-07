@@ -27,7 +27,9 @@
     if (self.beginAnimation)
     {
         [self animateStars];
+        self.beginAnimation = NO;
     }
+    
 }
 
 -(void) animateStars
