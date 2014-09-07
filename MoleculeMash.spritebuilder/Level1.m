@@ -22,24 +22,6 @@
 -(void) setupArray
 {
     self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Diatomic Nitrogen", @"Diatomic Oxygen", @"H2O", nil];
-
 }
-
-
-
-//-(void) pause
-//{
-//    [super pause];
-//}
-//
-//-(void) restart
-//{
-//    [super restart];
-//}
-//
-//-(void) quit
-//{
-//    [super quit];
-//}
 
 @end

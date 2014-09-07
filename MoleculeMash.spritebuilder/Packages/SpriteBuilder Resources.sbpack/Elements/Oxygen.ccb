@@ -1253,6 +1253,52 @@
 			<dict>
 				<key>UUID</key>
 				<integer>53</integer>
+				<key>animatedProperties</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>rotation</key>
+						<dict>
+							<key>keyframes</key>
+							<array>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>0.0</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>0.0</real>
+								</dict>
+								<dict>
+									<key>easing</key>
+									<dict>
+										<key>type</key>
+										<integer>1</integer>
+									</dict>
+									<key>name</key>
+									<string>rotation</string>
+									<key>time</key>
+									<real>4</real>
+									<key>type</key>
+									<integer>2</integer>
+									<key>value</key>
+									<real>360</real>
+								</dict>
+							</array>
+							<key>name</key>
+							<string>rotation</string>
+							<key>type</key>
+							<integer>2</integer>
+						</dict>
+					</dict>
+				</dict>
 				<key>baseClass</key>
 				<string>CCNode</string>
 				<key>children</key>
@@ -1566,6 +1612,8 @@
 								<string>Particles/Proton.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1885,7 +1933,19 @@
 							<integer>0</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>baseValue</key>
+						<real>0.0</real>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>87</real>
+					</dict>
 				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1896,40 +1956,6 @@
 		<string></string>
 		<key>memberVarAssignmentType</key>
 		<integer>1</integer>
-		<key>physicsBody</key>
-		<dict>
-			<key>affectedByGravity</key>
-			<false/>
-			<key>allowsRotation</key>
-			<false/>
-			<key>bodyShape</key>
-			<integer>1</integer>
-			<key>collisionCategories</key>
-			<array/>
-			<key>collisionMask</key>
-			<array/>
-			<key>collisionType</key>
-			<string></string>
-			<key>cornerRadius</key>
-			<real>37.5</real>
-			<key>density</key>
-			<real>1</real>
-			<key>dynamic</key>
-			<true/>
-			<key>elasticity</key>
-			<real>0.30000001192092896</real>
-			<key>friction</key>
-			<real>0.30000001192092896</real>
-			<key>points</key>
-			<array>
-				<array>
-					<real>37.5</real>
-					<real>37.5</real>
-				</array>
-			</array>
-			<key>polygons</key>
-			<array/>
-		</dict>
 		<key>properties</key>
 		<array>
 			<dict>
@@ -2039,15 +2065,15 @@
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>4</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.033333335071802139</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.96666663885116577</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
