@@ -8,17 +8,31 @@
 
 #import "LevelBasics.h"
 #import "Level.h"
-#import "LevelScrollView.h"
 
 @implementation LevelBasics
 {
-    LevelScrollView *_scrollView;
     CCNode *_pauseScene;
     CCNode *_mainPauseButton;
     BOOL paused;
 }
 
 -(void) didLoadFromCCB {
+    _hydrogenButton = _scrollView.hydrogenButton;
+    _lithiumButton = _scrollView.lithiumButton;
+    _boronButton = _scrollView.boronButton;
+    _carbonButton = _scrollView.carbonButton;
+    _oxygenButton = _scrollView.oxygenButton;
+    _chlorineButton = _scrollView.chlorineButton;
+    _sodiumButton = _scrollView.sodiumButton;
+    _phosphorousButton = _scrollView.phosphorousButton;
+    _sulfurButton = _scrollView.sulfurButton;
+    _bromineButton = _scrollView.bromineButton;
+    _rubidiumButton = _scrollView.rubidiumButton;
+    _fluorineButton = _scrollView.fluorineButton;
+    _nitrogenButton = _scrollView.nitrogenButton;
+    _potassiumButton = _scrollView.potassiumButton;
+    
+    
     // Create clipping viewport to clip scrollview
     CGSize winSize= [CCDirector sharedDirector].viewSize;
     
@@ -45,6 +59,11 @@
     
     [scissor addChild:_scrollView];
     
+
+}
+
+-(void) update:(CCTime)delta
+{
     _hydrogenButton = _scrollView.hydrogenButton;
     _lithiumButton = _scrollView.lithiumButton;
     _boronButton = _scrollView.boronButton;
@@ -60,7 +79,6 @@
     _nitrogenButton = _scrollView.nitrogenButton;
     _potassiumButton = _scrollView.potassiumButton;
 }
-
 -(void)pause
 {
     if(self.paused)

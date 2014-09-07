@@ -19,6 +19,7 @@
 @property (assign, nonatomic) BOOL paused;
 @property (assign, nonatomic) LevelBasics *levelBasics;
 @property (assign, nonatomic) int levelNumber;
+@property (assign, nonatomic) BOOL gameStarted;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
@@ -27,20 +28,20 @@
 @property (strong, nonatomic) CCLabelTTF *objectiveLabel;
 @property (strong, nonatomic) CCLabelTTF *levelTitleLabel;
 
-@property (strong, nonatomic) CCNodeColor *hydrogenNode;
-@property (strong, nonatomic) CCNodeColor *lithiumNode;
-@property (strong, nonatomic) CCNodeColor *boronNode;
-@property (strong, nonatomic) CCNodeColor *carbonNode;
-@property (strong, nonatomic) CCNodeColor *oxygenNode;
-@property (strong, nonatomic) CCNodeColor *chlorineNode;
-@property (strong, nonatomic) CCNodeColor *sodiumNode;
-@property (strong, nonatomic) CCNodeColor *phosphorousNode;
-@property (strong, nonatomic) CCNodeColor *sulfurNode;
-@property (strong, nonatomic) CCNodeColor *bromineNode;
-@property (strong, nonatomic) CCNodeColor *rubidiumNode;
-@property (strong, nonatomic) CCNodeColor *fluorineNode;
-@property (strong, nonatomic) CCNodeColor *nitrogenNode;
-@property (strong, nonatomic) CCNodeColor *potassiumNode;
+@property (assign, nonatomic) BOOL  hydrogenButton;
+@property (assign, nonatomic) BOOL  lithiumButton;
+@property (assign, nonatomic) BOOL  boronButton;
+@property (assign, nonatomic) BOOL  carbonButton;
+@property (assign, nonatomic) BOOL  oxygenButton;
+@property (assign, nonatomic) BOOL  chlorineButton;
+@property (assign, nonatomic) BOOL  sodiumButton;
+@property (assign, nonatomic) BOOL  phosphorousButton;
+@property (assign, nonatomic) BOOL  sulfurButton;
+@property (assign, nonatomic) BOOL  bromineButton;
+@property (assign, nonatomic) BOOL  rubidiumButton;
+@property (assign, nonatomic) BOOL  fluorineButton;
+@property (assign, nonatomic) BOOL  nitrogenButton;
+@property (assign, nonatomic) BOOL  potassiumButton;
 
 -(void) didLoadFromCCB;
 -(void) pause;

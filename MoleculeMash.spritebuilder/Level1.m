@@ -10,15 +10,16 @@
 
 @implementation Level1
 {
-    LevelBasics *_levelBasics;
+
 }
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
-    _levelBasics.levelNumber = 1;
+    [self setupArray];
+    self.levelBasics.levelNumber = 1;
 }
 
--(void) setupArrays
+-(void) setupArray
 {
     self.objectiveFinalMolecule = [NSMutableArray arrayWithObjects: @"Diatomic Nitrogen", @"Diatomic Oxygen", @"H2O", nil];
 

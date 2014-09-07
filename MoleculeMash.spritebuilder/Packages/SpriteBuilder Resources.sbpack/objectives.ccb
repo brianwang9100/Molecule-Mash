@@ -123,7 +123,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateRubidium</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -430,6 +430,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -437,7 +439,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_rubidiumButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -523,8 +525,6 @@
 								<real>1</real>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -603,7 +603,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateBromine</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -917,7 +917,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_bromineButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -1081,7 +1081,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activatePotassium</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1395,7 +1395,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_potassiumButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -1559,7 +1559,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateChlorine</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1873,7 +1873,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_chlorineButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2037,7 +2037,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateSulfur</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2351,7 +2351,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_sulfurButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2515,7 +2515,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activatePhosphorous</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -2829,7 +2829,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_phosphorousButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2993,7 +2993,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateSodium</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -3307,7 +3307,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_sodiumButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -3471,7 +3471,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateFluorine</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -3785,7 +3785,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_fluorineButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -3949,7 +3949,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateOxygen</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -4263,7 +4263,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_oxygenButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -4427,7 +4427,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateNitrogen</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -4741,7 +4741,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_nitrogenButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -4905,7 +4905,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateCarbon</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -5219,7 +5219,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_carbonButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -5383,7 +5383,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateBoron</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -5697,7 +5697,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_boronButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -5861,7 +5861,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateLithium</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -6175,7 +6175,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_lithiumButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -6339,7 +6339,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string></string>
+											<string>activateHydrogen</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -6653,7 +6653,7 @@
 						<key>displayName</key>
 						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
-						<string>_hydrogenButton</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -6859,7 +6859,7 @@
 				<key>value</key>
 				<array>
 					<real>70</real>
-					<real>850</real>
+					<real>995</real>
 					<integer>0</integer>
 					<integer>0</integer>
 				</array>

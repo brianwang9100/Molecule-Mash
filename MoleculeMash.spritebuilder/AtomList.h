@@ -9,18 +9,18 @@
 #import "CCNode.h"
 
 @interface AtomList : CCNode
-@property (strong, nonatomic) CCNodeColor *hydrogenButton;
-@property (strong, nonatomic) CCNodeColor *lithiumButton;
-@property (strong, nonatomic) CCNodeColor *boronButton;
-@property (strong, nonatomic) CCNodeColor *carbonButton;
-@property (strong, nonatomic) CCNodeColor *oxygenButton;
-@property (strong, nonatomic) CCNodeColor *chlorineButton;
-@property (strong, nonatomic) CCNodeColor *sodiumButton;
-@property (strong, nonatomic) CCNodeColor *phosphorousButton;
-@property (strong, nonatomic) CCNodeColor *sulfurButton;
-@property (strong, nonatomic) CCNodeColor *bromineButton;
-@property (strong, nonatomic) CCNodeColor *rubidiumButton;
-@property (strong, nonatomic) CCNodeColor *fluorineButton;
-@property (strong, nonatomic) CCNodeColor *nitrogenButton;
-@property (strong, nonatomic) CCNodeColor *potassiumButton;
+@property (assign, nonatomic) BOOL  hydrogenButton;
+@property (assign, nonatomic) BOOL  lithiumButton;
+@property (assign, nonatomic) BOOL  boronButton;
+@property (assign, nonatomic) BOOL  carbonButton;
+@property (assign, nonatomic) BOOL  oxygenButton;
+@property (assign, nonatomic) BOOL  chlorineButton;
+@property (assign, nonatomic) BOOL  sodiumButton;
+@property (assign, nonatomic) BOOL  phosphorousButton;
+@property (assign, nonatomic) BOOL  sulfurButton;
+@property (assign, nonatomic) BOOL  bromineButton;
+@property (assign, nonatomic) BOOL  rubidiumButton;
+@property (assign, nonatomic) BOOL  fluorineButton;
+@property (assign, nonatomic) BOOL  nitrogenButton;
+@property (assign, nonatomic) BOOL  potassiumButton;
 @end

@@ -9,27 +9,15 @@
 #import "Level10.h"
 
 @implementation Level10
-{
-    LevelBasics *_levelBasics;
-}
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
+    [self setupArray];
     self.levelNumber = 10;
 }
 
--(void) pause
+-(void) setupArray
 {
-    [super pause];
-}
-
--(void) restart
-{
-    [super restart];
-}
-
--(void) quit
-{
-    [super quit];
+    
 }
 @end

@@ -11,26 +11,17 @@
 
 @implementation Level9
 {
-    LevelBasics *_levelBasics;
+
 }
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
+    [self setupArray];
     self.levelNumber = 9;
 }
 
--(void) pause
+-(void) setupArray
 {
-    [super pause];
-}
-
--(void) restart
-{
-    [super restart];
-}
-
--(void) quit
-{
-    [super quit];
+    
 }
 @end

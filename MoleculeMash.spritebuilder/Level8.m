@@ -14,26 +14,18 @@
 
 @implementation Level8
 {
-    LevelBasics *_levelBasics;
+    
 }
+
 -(void) didLoadFromCCB
 {
     [super didLoadFromCCB];
+    [self setupArray];
     self.levelNumber = 8;
 }
 
--(void) pause
+-(void) setupArray
 {
-    [super pause];
-}
-
--(void) restart
-{
-    [super restart];
-}
-
--(void) quit
-{
-    [super quit];
+    
 }
 @end
