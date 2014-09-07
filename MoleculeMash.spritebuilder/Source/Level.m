@@ -15,17 +15,22 @@
     CGPoint _locationTouchEnded;
     float _timeTookForSwipe;
     int _screenSizeMultiplier;
+    CCNode *_grid;
     
+    int _nextXvalue
+    int _nextYvalue;
+
 }
 
 -(void) didLoadFromCCB
 {
     self.userInteractionEnabled = TRUE;
-
     self.currentObjectiveNumber = 0;
-
     self.gameStarted = FALSE;
-
+    self.currentNumberOfAtoms = 0;
+    
+    _nextXvalue = 50;
+    _nextXvalue = 50;
     
     
     self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -63,6 +68,12 @@
     {
         _timeTookForSwipe += delta;
         NSString *atomString;
+        
+        if (_levelBasics.trashTime)
+        {
+            [self removeAllAtoms];
+            _levelBasics.trashTime = NO;
+        }
         if (_hydrogenButton)
         {
             atomString = @"Hydrogen";
@@ -170,14 +181,38 @@
     float val = (((float)arc4random()/ARC4RANDOM_MAX)* 2 -1)*101;
     return val;
 }
+-(void) removeAllAtoms
+{
+    for (id e in _listOfAtoms)
+    {
+        [e removeFromParent];
+        //add particles
+    }
+    
+    [_listOfAtoms removeAllObjects];
+    _currentNumberOfAtoms = 0;
+}
+
+-(void) addToGrid: (CCNode*) object
+{
+    object.position = ccp(_nextXvalue, _nextYvalue);
+    _nextXvalue += 100;
+    _nextXvalue += 100;
+    if (_nextXvalue > _grid.contentSize.width)
+    {
+        
+    }
+    [_grid addChild: object];
+}
 
 -(void) launchAtom: (NSString*) atomString
 {
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
-    _currentAtom.position = ccp(0,0);
-    [self addChild:_currentAtom];
+    [self addToGrid: _currentAtom];
+    [_listOfAtoms addObject:_currentAtom];
+    _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;
 }

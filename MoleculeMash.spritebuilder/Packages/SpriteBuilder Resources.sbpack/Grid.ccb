@@ -459,7 +459,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>Grid</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

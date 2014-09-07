@@ -32,6 +32,7 @@
     _nitrogenButton = _scrollView.nitrogenButton;
     _potassiumButton = _scrollView.potassiumButton;
     
+    _trashTime = NO;
     
     // Create clipping viewport to clip scrollview
     CGSize winSize= [CCDirector sharedDirector].viewSize;
@@ -127,5 +128,10 @@
     
     
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
+}
+
+-(void) trash
+{
+    self.trashTime = YES;
 }
 @end

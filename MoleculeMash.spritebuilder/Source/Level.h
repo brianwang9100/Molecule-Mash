@@ -20,6 +20,8 @@
 @property (assign, nonatomic) LevelBasics *levelBasics;
 @property (assign, nonatomic) int levelNumber;
 @property (assign, nonatomic) BOOL gameStarted;
+@property (assign, nonatomic) int maxNumberOfAtoms;
+@property (assign, nonatomic) int currentNumberOfAtoms;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;

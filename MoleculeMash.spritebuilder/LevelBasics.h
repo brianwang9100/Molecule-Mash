@@ -12,6 +12,7 @@
 @interface LevelBasics : CCNode
 @property (assign, nonatomic) int levelNumber;
 @property (strong, nonatomic) LevelScrollView *scrollView;
+@property (assign, nonatomic) BOOL trashTime;
 
 @property (assign, nonatomic) BOOL  hydrogenButton;
 @property (assign, nonatomic) BOOL  lithiumButton;
