@@ -302,8 +302,7 @@
 -(void) launchAtom: (NSString*) atomString
 {
     float randomXDirection = [self randomFloat];
-//    NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
-    NSString *formattedString = @"Atom";
+    NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     CGPoint direction = ccp(randomXDirection, 300);
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
