@@ -245,6 +245,15 @@
     _currentNumberOfAtoms++;
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;
+    
+    if (self.arrow1 != nil || self.arrow2 != nil)
+    {
+        [self.arrow1 removeFromParent];
+        [self.arrow2 removeFromParent];
+        self.arrow1 = nil;
+        self.arrow2 = nil;
+        
+    }
 }
 
 @end

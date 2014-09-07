@@ -44,6 +44,8 @@
 @property (assign, nonatomic) BOOL *didLaunch;
 @property (assign, nonatomic) int nextXvalue;
 @property (assign, nonatomic) int nextYvalue;
+@property (assign, nonatomic) CCNode *arrow1;
+@property (assign, nonatomic) CCNode *arrow2;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
