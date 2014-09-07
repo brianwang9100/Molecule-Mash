@@ -21,11 +21,11 @@
 -(void) didLoadFromCCB
 {
     self.userInteractionEnabled = TRUE;
-    self.physicsNode.collisionDelegate = self;
+
     self.currentObjectiveNumber = 0;
-    _timeTookForSwipe = 0;
+
     self.gameStarted = FALSE;
-//    _screenSizeMultiplier = 1;
+
     
     
     self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -43,10 +43,6 @@
     self.nitrogenButton = self.levelBasics.nitrogenButton;
     self.potassiumButton  = self.levelBasics.potassiumButton;
     
-//    if ([self isiPad])
-//    {
-//        _screenSizeMultiplier = 2;
-//    }
     
     [self startGame];
     
@@ -56,134 +52,10 @@
     self.gameStarted = YES;
 }
 
--(BOOL) isiPad {
-    return UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPad;
-}
-
 -(void) cycleNextObjective
 {
     _currentObjectiveNumber++;
 }
-
-//-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
-//{
-//    _timeTookForSwipe = 0;
-//    _locationTouchBegan = [touch locationInNode:self];
-//    
-//}
-//
-//-(void) touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-//{
-//    NSString *atomString;
-//    CCNodeColor *buttonRef;
-//    _locationTouchEnded = [touch locationInNode: self];
-//    
-//    if ([self containsExactTouchLocation:_locationTouchBegan withObject:_hydrogenNode])
-//    {
-//        atomString = @"Hydrogen";
-//        buttonRef = _hydrogenNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_lithiumNode])
-//    {
-//        atomString = @"Lithium";
-//        buttonRef = _lithiumNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_boronNode])
-//    {
-//        atomString = @"Boron";
-//        buttonRef = _boronNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_carbonNode])
-//    {
-//        atomString = @"Carbon";
-//        buttonRef = _carbonNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_nitrogenNode])
-//    {
-//        atomString = @"Nitrogen";
-//        buttonRef = _nitrogenNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_oxygenNode])
-//    {
-//        atomString = @"Oxygen";
-//        buttonRef = _oxygenNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_fluorineNode])
-//    {
-//        atomString = @"Fluorine";
-//        buttonRef = _fluorineNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_sodiumNode])
-//    {
-//        atomString = @"Sodium";
-//        buttonRef = _sodiumNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_phosphorousNode])
-//    {
-//        atomString = @"Phosphorous";
-//        buttonRef = _phosphorousNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_sulfurNode])
-//    {
-//        atomString = @"Sulfur";
-//        buttonRef = _sulfurNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_chlorineNode])
-//    {
-//        atomString = @"Chlorine";
-//        buttonRef = _chlorineNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_potassiumNode])
-//    {
-//        atomString = @"Potassium";
-//        buttonRef = _potassiumNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_bromineNode])
-//    {
-//        atomString = @"Bromine";
-//        buttonRef = _bromineNode;
-//    }
-//    else if ([self containsExactTouchLocation:_locationTouchBegan withObject:_rubidiumNode])
-//    {
-//        atomString = @"Rubidium";
-//        buttonRef = _rubidiumNode;
-//    }
-//    else
-//    {
-//        return;
-//    }
-//    
-//    if (_timeTookForSwipe == 0)
-//    {
-//        _timeTookForSwipe = (float).35;
-//    }
-//    
-//    //actually moves the fruit
-//    CGPoint direction = ccp([self calculateDirections].x * _currentAtom.physicsBody.mass/_timeTookForSwipe,[self calculateDirections].y * _screenSizeMultiplier * _currentAtom.physicsBody.mass/_timeTookForSwipe);
-//    
-//    //set minimums and maximums for speed
-//    float forceThreshold = _currentAtom.physicsBody.mass*_screenSizeMultiplier*500/.5;
-//    float forceMax = _currentAtom.physicsBody.mass*_screenSizeMultiplier*1500/.5;
-//    
-//    if (direction.x > forceThreshold)
-//    {
-//        return;
-//    }
-//    else if (direction.x < forceMax)
-//    {
-//        direction.x = forceMax;
-//    }
-//    
-//    _currentAtom = (id)[CCBReader load: atomString];
-//    _currentAtom.position = _locationTouchBegan;
-//    _currentAtom.physicsBody.allowsRotation = FALSE;
-//    _currentAtom.physicsBody.affectedByGravity = FALSE;
-//    [_physicsNode addChild:_currentAtom];
-//    [_currentAtom.physicsBody applyForce:ccpMult(direction,20)];
-//    
-//    
-//    
-//}
 
 -(void) update:(CCTime)delta
 {
@@ -301,15 +173,13 @@
 
 -(void) launchAtom: (NSString*) atomString
 {
-    float randomXDirection = [self randomFloat];
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
-    CGPoint direction = ccp(randomXDirection, 300);
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
     _currentAtom.position = ccp(0,0);
-    [_physicsNode addChild:_currentAtom];
-    [_currentAtom.physicsBody applyForce:ccpMult(direction,100)];
+    [self addChild:_currentAtom];
     _currentAtom.physicsBody.allowsRotation = FALSE;
     _currentAtom.physicsBody.affectedByGravity = FALSE;
 }
+
 @end
