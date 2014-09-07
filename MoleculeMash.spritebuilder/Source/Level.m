@@ -207,6 +207,7 @@
             
         }
     }
+    self.didLaunch = NO;
 }
 
 -(void) removeMaxedOutLabel
@@ -219,6 +220,7 @@
 }
 -(void) launchAtom: (NSString*) atomString
 {
+    self.didLaunch = YES;
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];
