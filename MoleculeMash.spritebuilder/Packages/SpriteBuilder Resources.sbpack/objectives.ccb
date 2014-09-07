@@ -573,7 +573,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -643,8 +643,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -656,7 +656,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -1320,7 +1320,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -1390,8 +1390,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -1403,7 +1403,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -2067,7 +2067,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2137,8 +2137,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -2150,7 +2150,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -2814,7 +2814,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2884,8 +2884,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -2897,7 +2897,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -3561,7 +3561,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -3631,8 +3631,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -3644,7 +3644,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -4308,7 +4308,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -4317,7 +4317,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>10</real>
+											<real>11</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -4378,8 +4378,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -4391,7 +4391,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -5055,7 +5055,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5125,8 +5125,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -5138,7 +5138,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -5802,7 +5802,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -5872,8 +5872,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -5885,7 +5885,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -6549,7 +6549,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -6619,8 +6619,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -6632,7 +6632,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -7296,7 +7296,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -7366,8 +7366,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -7379,7 +7379,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -8043,7 +8043,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8113,8 +8113,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -8126,7 +8126,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -8790,7 +8790,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -8860,8 +8860,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -8873,7 +8873,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -9427,8 +9427,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>24.348709106445312</real>
-											<real>11.322877883911133</real>
+											<real>26.277721405029297</real>
+											<real>29.166240692138672</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -9446,6 +9446,14 @@
 											<true/>
 											<integer>0</integer>
 										</array>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>rotation</string>
+										<key>type</key>
+										<string>Degrees</string>
+										<key>value</key>
+										<real>40</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -9539,7 +9547,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -9609,8 +9617,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -9622,7 +9630,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -10286,7 +10294,7 @@
 										<key>type</key>
 										<string>FontTTF</string>
 										<key>value</key>
-										<string>GillSans-Bold</string>
+										<string>GillSans</string>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -10295,7 +10303,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>10</real>
+											<real>11</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -10356,8 +10364,8 @@
 										<string>Color4</string>
 										<key>value</key>
 										<array>
-											<real>1</real>
-											<real>1</real>
+											<real>0.40000000596046448</real>
+											<real>0.80000001192092896</real>
 											<real>1</real>
 											<real>1</real>
 										</array>
@@ -10369,7 +10377,7 @@
 										<string>FloatScale</string>
 										<key>value</key>
 										<array>
-											<real>0.0</real>
+											<real>1</real>
 											<integer>0</integer>
 										</array>
 									</dict>
@@ -10710,7 +10718,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.5</real>
+			<real>2.3666665554046631</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
