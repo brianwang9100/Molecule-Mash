@@ -42,6 +42,8 @@
 @property (strong, nonatomic) CCNode *currentMolecule;
 @property (strong, nonatomic) CCLabelTTF *backgroundLabel;
 @property (assign, nonatomic) BOOL *didLaunch;
+@property (assign, nonatomic) int nextXvalue;
+@property (assign, nonatomic) int nextYvalue;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;

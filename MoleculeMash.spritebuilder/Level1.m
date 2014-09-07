@@ -52,15 +52,16 @@
 -(void) endObjective1
 {
     _transitionMode = YES;
-    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
+    id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
     id moveToWithEase = [CCActionEaseOut actionWithAction:moveTo];
+    
     for (id e in self.listOfAtoms)
     {
         [e runAction: moveToWithEase];
     }
     
-    [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroChloricAcid" afterDelay: 1];
+    [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 2];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroChloricAcid" afterDelay: 2];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
     [self performSelector:@selector(objective2) withObject:nil afterDelay: 5];
 }
@@ -235,21 +236,25 @@
                     break;
             }
         }
-        else if (self.currentNumberOfAtoms > self.maxNumberOfAtoms && !_resetTransitionMode)
+        else if (self.currentNumberOfAtoms >= self.maxNumberOfAtoms && !_resetTransitionMode)
         {
             _genericLabel = nil;
             _genericLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
             _genericLabel.label.string = @"WRONG COMBINATION!";
-            _genericLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
-            id labelMoveTo = [CCActionMoveTo actionWithDuration:.5  position: ccp(self.contentSize.width*.5, self.contentSize.height*.5)];
+            _genericLabel.position = ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*1.2);
+            id labelMoveTo = [CCActionMoveTo actionWithDuration:1.5  position: ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*.5)];
             id labelBounceOut = [CCActionEaseElasticInOut actionWithAction: labelMoveTo period: .4];
             [self addChild: _genericLabel];
             [ _genericLabel runAction: labelBounceOut];
             
             _resetTransitionMode = YES;
             self.userInteractionEnabled = FALSE;
-            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
-            [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:1];
+            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:4];
+            [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:4];
+            
+            self.nextXvalue = 50;
+            self.nextYvalue = 75;
+        
         }
     }
 }
