@@ -158,7 +158,7 @@
             atomString = @"Rubidium";
             [self launchAtom: atomString];
             self.levelBasics.scrollView.atomList.rubidiumButton = FALSE;
-            self.rubidiumButtom = FALSE;
+            self.rubidiumButton = FALSE;
         }
         
         self.hydrogenButton = self.levelBasics.hydrogenButton;
