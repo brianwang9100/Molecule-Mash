@@ -70,7 +70,7 @@
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 2];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroCholricAcid" afterDelay: 2];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroChloricAcid" afterDelay: 2];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
     [self performSelector:@selector(objective2) withObject:nil afterDelay: 5];
 }
@@ -116,7 +116,7 @@
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroBromicAcid" afterDelay: 1];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroBromicAcid" afterDelay: 1];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton, or Hydrogen atom" afterDelay: 3];
     [self performSelector:@selector(objective3) withObject:nil afterDelay: 5];
 
@@ -146,7 +146,7 @@
     }
     
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
-    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"Molecules/HydroFluoricAcid" afterDelay: 1];
+    [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroFluoricAcid" afterDelay: 1];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"The more protons" afterDelay: 3];
     [self performSelector:@selector(endGame) withObject:nil afterDelay: 5];
 }
@@ -161,7 +161,13 @@
     self.levelBasics.levelTitleLabel.string = @"";
     self.levelBasics.objectiveLabel.string = @"";
     
-    //loadEndGamePopUp
+    self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
+    self.postGamePopUp.position = ccp(.5,.5);
+    self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
+    self.postGamePopUp.time = (float) self.timeTaken;
+    self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
+    self.postGamePopUp.beginAnimation = YES;
+    
 }
 
 -(void)update:(CCTime)delta
@@ -170,6 +176,7 @@
     
     if(!_transitionMode)
     {
+        self.timeTaken += delta;
         if (self.currentNumberOfAtoms == self.maxNumberOfAtoms)
         {
             switch (self.currentObjectiveNumber)
