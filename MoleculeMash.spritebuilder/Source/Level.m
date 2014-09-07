@@ -198,6 +198,7 @@
 {
     object.position = ccp(_nextXvalue, _nextYvalue);
     [_grid addChild: object];
+    [self loadParticleExplosionWithParticleNameFromGrid:@"Particles2" onObject:object];
     _nextXvalue += 100;
     
     if (_nextXvalue > _grid.contentSize.width)
@@ -281,10 +282,22 @@
 {
     @synchronized(self)
     {
+
+        CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
+        explosion.autoRemoveOnFinish = TRUE;
+        explosion.position = [self convertToWorldSpace:object.position ];
+        [self addChild: explosion];
+    }
+}
+
+-(void)loadParticleExplosionWithParticleNameFromGrid: (NSString *) particleName onObject: (CCNode*) object
+{
+    @synchronized(self)
+    {
         CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
         explosion.autoRemoveOnFinish = TRUE;
         explosion.position = object.position;
-        [self addChild: explosion];
+        [self.grid addChild: explosion];
     }
 }
 @end

@@ -78,4 +78,7 @@
 -(void) launchAtom: (NSString*) atomString;
 -(void) removeMaxedOutLabel;
 -(void) removeAllAtoms;
+
+-(void)loadParticleExplosionWithParticleName: (NSString *) particleName onObject: (CCNode*) object;
+-(void)loadParticleExplosionWithParticleNameFromGrid: (NSString *) particleName onObject: (CCNode*) object;
 @end

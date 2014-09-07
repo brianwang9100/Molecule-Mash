@@ -18,8 +18,8 @@
 }
 
 -(void)play {
-    [self loadParticleExplosionWithParticleName:@"Particles" onObject:_atom];
-    [self loadParticleExplosionWithParticleName:@"BigParticles" onObject: _atom];
+    [self loadParticleExplosionWithParticleName:@"Particles" onObject:_button];
+    [self loadParticleExplosionWithParticleName:@"BigParticles" onObject: _button];
     [self performSelector:@selector(playTransition) withObject:nil afterDelay:2];
 }
 
@@ -88,9 +88,10 @@
 {
     @synchronized(self)
     {
+        
         CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
         explosion.autoRemoveOnFinish = TRUE;
-        explosion.position = object.position;
+        explosion.position = [self convertToWorldSpaceAR:object.position];
         [self addChild: explosion];
     }
 }
