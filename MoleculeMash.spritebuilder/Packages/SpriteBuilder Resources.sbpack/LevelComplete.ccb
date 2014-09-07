@@ -419,8 +419,8 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.62153720855712891</real>
-							<real>0.98768091201782227</real>
+							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -729,8 +729,8 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.62153720855712891</real>
-							<real>0.98768091201782227</real>
+							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -1039,8 +1039,8 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.62153720855712891</real>
-							<real>0.98768091201782227</real>
+							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -1349,8 +1349,8 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.62153720855712891</real>
-							<real>0.98768091201782227</real>
+							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -2249,7 +2249,7 @@
 						<key>value</key>
 						<array>
 							<real>0.40000000596046448</real>
-							<real>1</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -2455,8 +2455,8 @@
 						<string>Color4</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>1</real>
+							<real>0.40000000596046448</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 							<real>1</real>
 						</array>
@@ -2511,8 +2511,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
