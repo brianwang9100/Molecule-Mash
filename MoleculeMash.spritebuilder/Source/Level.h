@@ -38,6 +38,8 @@
 @property (assign, nonatomic) BOOL gameStarted;
 @property (assign, nonatomic) int maxNumberOfAtoms;
 @property (assign, nonatomic) int currentNumberOfAtoms;
+@property (strong, nonatomic) CCNode *grid;
+@property (strong, nonatomic) CCNode *currentMolecule;
 
 @property (assign, nonatomic) int totalNumberOfObjectives;
 @property (assign, nonatomic) int currentObjectiveNumber;
@@ -66,4 +68,7 @@
 -(void) update:(CCTime)delta;
 -(void) restart;
 -(void) quit;
+-(void) launchAtom: (NSString*) atomString;
+-(void) removeMaxedOutLabel;
+-(void) removeAllAtoms;
 @end

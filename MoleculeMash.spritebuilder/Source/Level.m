@@ -11,11 +11,6 @@
 
 @implementation Level
 {
-    CGPoint _locationTouchBegan;
-    CGPoint _locationTouchEnded;
-    float _timeTookForSwipe;
-    int _screenSizeMultiplier;
-    CCNode *_grid;
     CCLabelTTF *_maxedOutLabel;
     
     int _nextXvalue;
@@ -51,17 +46,10 @@
     
 }
 
-
--(void) cycleNextObjective
-{
-    _currentObjectiveNumber++;
-}
-
 -(void) update:(CCTime)delta
 {
     if (_gameStarted)
     {
-        _timeTookForSwipe += delta;
         NSString *atomString;
         
         if (_levelBasics.trashTime)
@@ -218,6 +206,7 @@
     
     [_grid addChild: object];
 }
+
 -(void) removeMaxedOutLabel
 {
     if (_maxedOutLabel != nil)
