@@ -71,8 +71,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>18.513889312744141</real>
-							<real>-3.430553674697876</real>
+							<real>29.513889312744141</real>
+							<real>-2.4305543899536133</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -97,7 +97,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>110</real>
+						<real>116.46337890625</real>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -141,8 +141,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-30.888885498046875</real>
-							<real>-1.888888955116272</real>
+							<real>-19.888885498046875</real>
+							<real>-0.88888931274414062</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -242,6 +242,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
