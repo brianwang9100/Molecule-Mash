@@ -66,6 +66,7 @@
 		DFEA4FC319BBAE3C00E70619 /* LevelScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FC219BBAE3C00E70619 /* LevelScrollView.m */; };
 		DFEA4FC619BBAEE600E70619 /* Rubidium.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FC519BBAEE600E70619 /* Rubidium.m */; };
 		DFEA4FC919BBB3C700E70619 /* AtomList.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FC819BBB3C700E70619 /* AtomList.m */; };
+		DFEA4FF319BC259B00E70619 /* GenericLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA4FF219BC259B00E70619 /* GenericLabel.m */; };
 		DFF5E4D119BAD59D003353AB /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E4D019BAD59D003353AB /* Atom.m */; };
 		DFF5E4D319BAD6A3003353AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFF5E4D219BAD6A3003353AB /* README.md */; };
 /* End PBXBuildFile section */
@@ -181,6 +182,8 @@
 		DFEA4FC519BBAEE600E70619 /* Rubidium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rubidium.m; sourceTree = "<group>"; };
 		DFEA4FC719BBB3C700E70619 /* AtomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomList.h; sourceTree = "<group>"; };
 		DFEA4FC819BBB3C700E70619 /* AtomList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtomList.m; sourceTree = "<group>"; };
+		DFEA4FF119BC259B00E70619 /* GenericLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericLabel.h; sourceTree = "<group>"; };
+		DFEA4FF219BC259B00E70619 /* GenericLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericLabel.m; sourceTree = "<group>"; };
 		DFF5E4CF19BAD59D003353AB /* Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
 		DFF5E4D019BAD59D003353AB /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		DFF5E4D219BAD6A3003353AB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 				DFEA4FC219BBAE3C00E70619 /* LevelScrollView.m */,
 				DFEA4FC719BBB3C700E70619 /* AtomList.h */,
 				DFEA4FC819BBB3C700E70619 /* AtomList.m */,
+				DFEA4FF119BC259B00E70619 /* GenericLabel.h */,
+				DFEA4FF219BC259B00E70619 /* GenericLabel.m */,
 				DFEA4F9219BBA61000E70619 /* Elements */,
 				DFF5E4D919BAE892003353AB /* Levels */,
 			);
@@ -522,6 +527,7 @@
 				B7378994180767190076A88C /* Level.m in Sources */,
 				DFEA4FC619BBAEE600E70619 /* Rubidium.m in Sources */,
 				DFF5E4D119BAD59D003353AB /* Atom.m in Sources */,
+				DFEA4FF319BC259B00E70619 /* GenericLabel.m in Sources */,
 				DFEA4F9619BBA63C00E70619 /* Hydrogen.m in Sources */,
 				DFEA4F9C19BBA70C00E70619 /* Boron.m in Sources */,
 				DFEA4FC919BBB3C700E70619 /* AtomList.m in Sources */,

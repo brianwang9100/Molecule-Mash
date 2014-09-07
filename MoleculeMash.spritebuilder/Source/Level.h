@@ -10,6 +10,22 @@
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "Atom.h"
 #import "LevelBasics.h"
+#import "Hydrogen.h"
+#import "Boron.h"
+#import "Carbon.h"
+#import "Lithium.h"
+#import "Sulfur.h"
+#import "Sodium.h"
+#import "Oxygen.h"
+#import "Bromine.h"
+#import "Rubidium.h"
+#import "Chlorine.h"
+#import "Fluorine.h"
+#import "Nitrogen.h"
+#import "Potassium.h"
+#import "Phosphorous.h"
+#import "GenericLabel.h"
+
 
 @interface Level : CCScene <CCPhysicsCollisionDelegate>
 @property (strong, nonatomic) Atom *currentAtom;

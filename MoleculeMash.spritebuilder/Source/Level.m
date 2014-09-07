@@ -16,8 +16,9 @@
     float _timeTookForSwipe;
     int _screenSizeMultiplier;
     CCNode *_grid;
+    CCLabelTTF *_maxedOutLabel;
     
-    int _nextXvalue
+    int _nextXvalue;
     int _nextYvalue;
 
 }
@@ -48,14 +49,8 @@
     self.nitrogenButton = self.levelBasics.nitrogenButton;
     self.potassiumButton  = self.levelBasics.potassiumButton;
     
-    
-    [self startGame];
-    
 }
--(void)startGame
-{
-    self.gameStarted = YES;
-}
+
 
 -(void) cycleNextObjective
 {
@@ -196,15 +191,41 @@
 -(void) addToGrid: (CCNode*) object
 {
     object.position = ccp(_nextXvalue, _nextYvalue);
+    [_grid addChild: object];
     _nextXvalue += 100;
-    _nextXvalue += 100;
+    
     if (_nextXvalue > _grid.contentSize.width)
     {
-        
+        _nextXvalue = 0;
+        _nextYvalue += 100;
+        if (_nextYvalue >= _grid.contentSize.height)
+        {
+            _maxedOutLabel = (GenericLabel *)[CCBReader load:@"GenericLabel"];
+            _maxedOutLabel.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
+            id labelMoveTo = [CCActionMoveTo actionWithDuration:.5  position: ccp(self.contentSize.width*.5, self.contentSize.height*.5)];
+            id labelBounceOut = [CCActionEaseElasticInOut actionWithAction: labelMoveTo period: .4];
+            [self addChild:_maxedOutLabel];
+            [_maxedOutLabel runAction: labelBounceOut];
+            
+            [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay:1];
+            [self performSelector:@selector(removeMaxedOutLabel) withObject:nil afterDelay:1];
+            
+            _nextXvalue = 50;
+            _nextYvalue = 50;
+            
+        }
     }
+    
     [_grid addChild: object];
 }
-
+-(void) removeMaxedOutLabel
+{
+    if (_maxedOutLabel != nil)
+    {
+        [_maxedOutLabel removeFromParent];
+        _maxedOutLabel = nil;
+    }
+}
 -(void) launchAtom: (NSString*) atomString
 {
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
