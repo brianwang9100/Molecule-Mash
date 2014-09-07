@@ -27,6 +27,7 @@
     self.levelBasics.levelTitleLabel.string = @"";
     self.levelBasics.objectiveLabel.string = @"";
     self.backgroundLabel.string = @"";
+    self.didLaunch = NO;
     
     _nextXvalue = 50;
     _nextYvalue = 50;
@@ -51,98 +52,113 @@
 
 -(void) update:(CCTime)delta
 {
-    if (_gameStarted)
+    if (self.gameStarted && !self.didLaunch)
     {
         NSString *atomString;
         
-        if (_levelBasics.trashTime)
+        if (self.levelBasics.trashTime)
         {
             [self removeAllAtoms];
-            _levelBasics.trashTime = NO;
+            self.levelBasics.trashTime = NO;
         }
-        if (_hydrogenButton)
+        if (self.hydrogenButton)
         {
             atomString = @"Hydrogen";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.hydrogenButton = FALSE;
+            self.levelBasics.scrollView.atomList.hydrogenButton = FALSE;
+            self.hydrogenButton = FALSE;
+            
         }
-        else if (_lithiumButton)
+        else if (self.lithiumButton)
         {
             atomString = @"Lithium";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.lithiumButton = FALSE;
+            self.levelBasics.scrollView.atomList.lithiumButton = FALSE;
+            self.lithiumButton = FALSE;
         }
-        else if (_boronButton)
+        else if (self.boronButton)
         {
             atomString = @"Boron";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.boronButton = FALSE;
+            self.levelBasics.scrollView.atomList.boronButton = FALSE;
+            self.boronButton = FALSE;
         }
-        else if (_carbonButton)
+        else if (self.carbonButton)
         {
             atomString = @"Carbon";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.carbonButton = FALSE;
+            self.levelBasics.scrollView.atomList.carbonButton = FALSE;
+            self.carbonButton = FALSE;
         }
-        else if (_nitrogenButton)
+        else if (self.nitrogenButton)
         {
             atomString = @"Nitrogen";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.nitrogenButton = FALSE;
+            self.levelBasics.scrollView.atomList.nitrogenButton = FALSE;
+            self.nitrogenButton = FALSE;
         }
-        else if (_oxygenButton)
+        else if (self.oxygenButton)
         {
             atomString = @"Oxygen";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.oxygenButton = FALSE;
+            self.levelBasics.scrollView.atomList.oxygenButton = FALSE;
+            self.oxygenButton = FALSE;
         }
-        else if (_fluorineButton)
+        else if (self.fluorineButton)
         {
             atomString = @"Fluorine";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.fluorineButton = FALSE;
+            self.levelBasics.scrollView.atomList.fluorineButton = FALSE;
+            self.fluorineButton = FALSE;
         }
-        else if (_sodiumButton)
+        else if (self.sodiumButton)
         {
             atomString = @"Sodium";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.sodiumButton = FALSE;
+            self.levelBasics.scrollView.atomList.sodiumButton = FALSE;
+            self.sodiumButton = FALSE;
         }
-        else if (_phosphorousButton)
+        else if (self.phosphorousButton)
         {
             atomString = @"Phosphorous";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.phosphorousButton = FALSE;
+            self.levelBasics.scrollView.atomList.phosphorousButton = FALSE;
+            self.phosphorousButton = FALSE;
         }
-        else if (_sulfurButton)
+        else if (self.sulfurButton)
         {
             atomString = @"Sulfur";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.sulfurButton = FALSE;
+            self.levelBasics.scrollView.atomList.sulfurButton = FALSE;
+            self.sulfurButton = FALSE;
         }
-        else if (_chlorineButton)
+        else if (self.chlorineButton)
         {
             atomString = @"Chlorine";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.chlorineButton = FALSE;
+            self.levelBasics.scrollView.atomList.chlorineButton = FALSE;
+            self.chlorineButton = FALSE;
         }
-        else if (_potassiumButton)
+        else if (self.potassiumButton)
         {
             atomString = @"Potassium";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.potassiumButton = FALSE;
+            self.levelBasics.scrollView.atomList.potassiumButton = FALSE;
+            self.potassiumButton = FALSE;
         }
-        else if (_bromineButton)
+        else if (self.bromineButton)
         {
             atomString = @"Bromine";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.bromineButton = FALSE;
+            self.levelBasics.scrollView.atomList.bromineButton = FALSE;
+            self.bromineButton = FALSE;
         }
-        else if (_rubidiumButton)
+        else if (self.rubidiumButton)
         {
             atomString = @"Rubidium";
             [self launchAtom: atomString];
-            _levelBasics.scrollView.atomList.rubidiumButton = FALSE;
+            self.levelBasics.scrollView.atomList.rubidiumButton = FALSE;
+            self.rubidiumButton = FALSE;
         }
         
         self.hydrogenButton = self.levelBasics.hydrogenButton;
@@ -206,6 +222,7 @@
             
         }
     }
+    self.didLaunch = NO;
 }
 
 -(void) removeMaxedOutLabel
@@ -218,6 +235,7 @@
 }
 -(void) launchAtom: (NSString*) atomString
 {
+    self.didLaunch = YES;
     NSString *formattedString = [NSString stringWithFormat:@"Elements/%@", atomString];
     _currentAtom = nil;
     _currentAtom = (id)[CCBReader load: formattedString];

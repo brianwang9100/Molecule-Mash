@@ -1708,10 +1708,10 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>37.5</real>
-							<real>1.5</real>
+							<real>0.5</real>
+							<real>-20</real>
 							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -1882,6 +1882,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
