@@ -14,6 +14,7 @@
     CCLabelTTF *_mash;
     CCNode *_atom;
     CCLabelTTF *_label;
+    CCButton *_button;
 }
 
 -(void)play {
@@ -25,16 +26,23 @@
 -(void) didLoadFromCCB {
     
     _molecule.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
+    _button.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
+
     
     id contentNodeDrop = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
     id contentNodeBounce = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop period: .4];
     [_molecule runAction: contentNodeBounce];
+    
+    id contentNodeDrop1 = [CCActionMoveTo actionWithDuration:2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.45)];
+    id contentNodeGoIn = [CCActionEaseIn actionWithAction:contentNodeDrop1];
+    [_button runAction:contentNodeGoIn];
     
     _mash.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
 
     _atom.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
     
     _label.position = ccp(50, self.contentSize.height*1.2);
+
 
     
     [self performSelector:@selector(dropMash) withObject:nil afterDelay:.5];
@@ -54,6 +62,8 @@
     [_mash runAction: contentNodeBounce1];
 
 }
+
+
 
 -(void) slideInAtom {
     id contentNodeDrop1 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.45)];
