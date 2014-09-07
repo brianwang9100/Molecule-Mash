@@ -10,7 +10,12 @@
 #import "Level.h"
 
 @implementation LevelSelect
-
+{
+    CCLayoutBox *_layout1;
+    CCLayoutBox *_layout2;
+    CCLayoutBox *_layout3;
+    CCLayoutBox *_layout4;
+}
 
 //-(void) changeLevel: (id) sender
 //{
@@ -20,6 +25,38 @@
 //    [[CCDirector sharedDirector]  replaceScene: levelScene];
 //}
 
+-(void) didLoadFromCCB
+{
+    
+    _layout1.position = ccp(100, self.contentSize.height*1.2);
+    
+    id contentNodeDrop = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
+    id contentNodeBounce = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop period: .4];
+    [_layout1 runAction: contentNodeBounce];
+    
+    _layout2.position = ccp(75, self.contentSize.height*1.2);
+    
+    id contentNodeDrop1 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
+    id contentNodeBounce1 = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop1 period: .4];
+    [_layout2 runAction: contentNodeBounce1];
+    
+    _layout3.position = ccp(50, self.contentSize.height*1.2);
+    
+    id contentNodeDrop2 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
+    id contentNodeBounce2 = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop2 period: .4];
+    [_layout3 runAction: contentNodeBounce2];
+    
+    _layout4.position = ccp(25, self.contentSize.height*1.2);
+    
+    id contentNodeDrop3 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.85)];
+    id contentNodeBounce3 = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop3 period: .4];
+    [_layout4 runAction: contentNodeBounce3];
+    
+    
+    
+    
+    
+}
 -(void)level1 {
     CCScene *mainScene = [CCBReader loadAsScene:@"Levels/Level1"];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
