@@ -21,6 +21,10 @@
     [self loadParticleExplosionWithParticleName:@"Particles" onObject:_button];
     [self loadParticleExplosionWithParticleName:@"BigParticles" onObject: _button];
     [self performSelector:@selector(playTransition) withObject:nil afterDelay:2];
+    
+    id fadeOut = [CCActionFadeTo actionWithDuration: 2 opacity: 0];
+    
+    [_atom runAction:fadeOut];
 }
 
 -(void)playTransition
@@ -91,7 +95,7 @@
         
         CCParticleSystem *explosion = (CCParticleSystem*)[CCBReader load: particleName];
         explosion.autoRemoveOnFinish = TRUE;
-        explosion.position = [self convertToWorldSpaceAR:object.position];
+        explosion.position = [self convertToWorldSpaceAR:object.positionInPoints];
         [self addChild: explosion];
     }
 }

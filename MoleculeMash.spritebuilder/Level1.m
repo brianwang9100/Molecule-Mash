@@ -62,14 +62,14 @@
 -(void) endObjective1
 {
     _transitionMode = YES;
-    id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
-    
-    for (id e in self.listOfAtoms)
-    {
-        [e runAction: moveToWithEase];
-    }
-    
+//    id moveTo = [CCActionMoveTo actionWithDuration:2 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
+//    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+//    
+//    for (id e in self.listOfAtoms)
+//    {
+//        [e runAction: moveToWithEase];
+//    }
+    self.userInteractionEnabled = NO;
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 2];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroChloricAcid" afterDelay: 2];
     [self performSelector:@selector(loadGenericMessage:) withObject:@"Easy Right?" afterDelay: 3];
@@ -110,6 +110,7 @@
 }
 -(void) objective2
 {
+    self.userInteractionEnabled = TRUE;
     _transitionMode = NO;
     [self.currentMolecule removeFromParent];
     self.currentMolecule = nil;
@@ -129,22 +130,24 @@
 -(void) endObjective2
 {
     _transitionMode = YES;
-    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
-    for (CCNode *e in self.listOfAtoms)
-    {
-        [e runAction: moveToWithEase];
-    }
-    
+//    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
+//    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+//    for (CCNode *e in self.listOfAtoms)
+//    {
+//        [e runAction: moveToWithEase];
+//    }
+    self.userInteractionEnabled = NO;
+
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroBromicAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single proton,\n or Hydrogen atom" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"Acids usually have a single\n proton, or Hydrogen atom" afterDelay: 3];
     [self performSelector:@selector(objective3) withObject:nil afterDelay: 7];
 
 }
 
 -(void) objective3
 {
+    self.userInteractionEnabled = YES;
     _transitionMode = NO;
     [self.currentMolecule removeFromParent];
     self.currentMolecule = nil;
@@ -163,16 +166,17 @@
 -(void) endObjective3
 {
     _transitionMode = YES;
-    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
-    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
-    for (CCNode *e in self.listOfAtoms)
-    {
-        [e runAction: moveToWithEase];
-    }
-    
+//    id moveTo = [CCActionMoveTo actionWithDuration:1 position:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.5)];
+//    id moveToWithEase = [CCActionEaseInOut actionWithAction:moveTo];
+//    for (CCNode *e in self.listOfAtoms)
+//    {
+//        [e runAction: moveToWithEase];
+//    }
+    self.userInteractionEnabled = NO;
+
     [self performSelector:@selector(removeAllAtoms) withObject:nil afterDelay: 1];
     [self performSelector:@selector(loadObjectiveMolecule:) withObject:@"AllMolecules/HydroFluoricAcid" afterDelay: 1];
-    [self performSelector:@selector(loadGenericMessage:) withObject:@"The more protons" afterDelay: 3];
+    [self performSelector:@selector(loadGenericMessage:) withObject:@"Opposite of H+ is -OH!" afterDelay: 3];
     [self performSelector:@selector(endGame) withObject:nil afterDelay: 7];
 }
 
@@ -187,7 +191,7 @@
     self.levelBasics.objectiveLabel.string = @"";
     
     self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
-    self.postGamePopUp.position = ccp(.5,.5);
+    self.postGamePopUp.position = ccp(self.contentSizeInPoints.width*.5, self.contentSizeInPoints.height*.5);
     self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
     self.postGamePopUp.time = (float) self.timeTaken;
     self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";

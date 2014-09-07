@@ -19,6 +19,7 @@
 {
     self.time = 0;
     self.beginAnimation = NO;
+    self.userInteractionEnabled = YES;
 }
 
 -(void) update:(CCTime)delta
