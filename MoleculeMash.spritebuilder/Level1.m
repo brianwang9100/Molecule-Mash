@@ -56,7 +56,7 @@
     [self addChild: self.arrow1];
     [self addChild: self.arrow2];
     
-    [self loadGenericMessage:@"Tap the elements on the side\n to make the given atom!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.30)];
+    [self loadGenericMessage:@"Tap the elements on the side\n to make the given atom!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.15)];
     [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
 }
 -(void) endObjective1
@@ -124,7 +124,7 @@
     self.nextXvalue = 50;
     self.nextYvalue = 75;
     
-    [self loadGenericMessage:@"Fill in the blank!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.30)];
+    [self loadGenericMessage:@"Fill in the blank!" withPosition:ccp(self.grid.contentSize.width*.5, self.grid.contentSize.height*.15)];
     [self performSelector:@selector(removeGenericLabel) withObject:nil afterDelay:7];
 }
 -(void) endObjective2
@@ -191,9 +191,9 @@
     self.levelBasics.objectiveLabel.string = @"";
     
     self.postGamePopUp = (PostGamePopUp *)[CCBReader load:@"LevelComplete"];
-    self.postGamePopUp.positionType = CCPositionTypeNormalized;
-    self.postGamePopUp.position = ccp(.5,.5);
+    self.postGamePopUp.position = ccp(self.contentSizeInPoints.width*.5,self.contentSizeInPoints.height*.5);
     [self addChild:self.postGamePopUp];
+    
     self.postGamePopUp.timerLabel.string = [NSString stringWithFormat:@"%f", self.timeTaken];
     self.postGamePopUp.time = (float) self.timeTaken;
     self.postGamePopUp.messageLabel.string = @"Remember, acidic molecules usually\n involve one hydrogen ion!\n ex: HCl, HBr, HF";
@@ -321,5 +321,25 @@
     }
     _resetTransitionMode = NO;
     self.userInteractionEnabled = TRUE;
+}
+
+-(void) levelSelect
+{
+    [super levelSelect];
+}
+
+-(void) restart
+{
+    [super restart];
+}
+
+-(void) nextLevel
+{
+    [super nextLevel];
+}
+
+-(void) quit
+{
+    [super quit];
 }
 @end

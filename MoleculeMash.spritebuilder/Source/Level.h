@@ -75,6 +75,8 @@
 -(void) update:(CCTime)delta;
 -(void) restart;
 -(void) quit;
+-(void) levelSelect;
+-(void) nextLevel;
 -(void) launchAtom: (NSString*) atomString;
 -(void) removeMaxedOutLabel;
 -(void) removeAllAtoms;
