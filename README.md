@@ -1,5 +1,5 @@
 #Molecule-Mash
-=============
+##MHacks(2014)
 ##Authors: 
 
 Brian Wang
@@ -10,19 +10,14 @@ Mitchell Malinin
 
 Eric Friedman
 
-
 ###Description
  Educational Chemistry game geared towards younger students. An interactive way to learn about basic elements, molecules, bonds, special types of molecules, and many other chemistry concepts. Basic levels consist of tapping on elements to combine them in order to make molecules. Finish the series of molecules as fast as possible to gain the best time!
-
- Made at MHacks(2014)
  
- Honorable Mention by Apple as one of top iOS Apps at the Hackathon
-
-
-
-
-
-
+Features:
+ - Honorable Mention by Apple as one of top iOS Apps at the Hackathon
+ - Features 14 Elements and over 30 PolyAtomic Molecules
+ - Set for 10+ levels, each with their respective themes
+ - Easy to use interface with reponsive particle effects
 
 ###What is working
  - Buttons
