@@ -17,7 +17,8 @@
     CCButton *_button;
 }
 
--(void)play {
+-(void)play
+{
     [self loadParticleExplosionWithParticleName:@"Particles" onObject:_button];
     [self loadParticleExplosionWithParticleName:@"BigParticles" onObject: _button];
     [self performSelector:@selector(playTransition) withObject:nil afterDelay:2];
@@ -34,7 +35,8 @@
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
 }
 
--(void) didLoadFromCCB {
+-(void) didLoadFromCCB
+{
     
     _molecule.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
     _button.position = ccp(self.contentSize.width*.5, self.contentSize.height*1.2);
@@ -66,7 +68,8 @@
     
 }
 
--(void) dropMash {
+-(void) dropMash
+{
 
     id contentNodeDrop1 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.65)];
     id contentNodeBounce1 = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop1 period: .4];
@@ -76,13 +79,15 @@
 
 
 
--(void) slideInAtom {
+-(void) slideInAtom
+{
     id contentNodeDrop1 = [CCActionMoveTo actionWithDuration: 2 position:ccp(self.contentSize.width*.5, self.contentSize.height*.45)];
     id contentNodeBounce1 = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop1 period: .4];
     [_atom runAction: contentNodeBounce1];
 }
 
--(void) slideInLabel {
+-(void) slideInLabel
+{
     id contentNodeDrop1 = [CCActionMoveTo actionWithDuration:1 position:ccp(self.contentSize.width*.5, self.contentSize.height*.25)];
     id contentNodeSlide = [CCActionEaseElasticInOut actionWithAction:contentNodeDrop1];
     [_label runAction: contentNodeSlide];

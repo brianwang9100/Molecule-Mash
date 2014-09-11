@@ -334,7 +334,7 @@
 
 -(void) restart
 {
-    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.levelNumber) ]];
+    CCScene *mainScene = [CCBReader loadAsScene:[NSString stringWithFormat: @"Level%i",( self.levelNumber+1) ]];
     CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:.5f];
     [[CCDirector sharedDirector] replaceScene:mainScene withTransition:transition];
     

@@ -111,8 +111,10 @@
     }
 }
 
--(void) restart {
-    if (self.paused) {
+-(void) restart
+{
+    if (self.paused)
+    {
         
         self.paused = FALSE;
         
@@ -123,14 +125,15 @@
 }
 
 
--(void) quit {
-    if (self.paused) {
+-(void) quit
+{
+    if (self.paused)
+    {
         
         self.paused = FALSE;
         
         [[CCDirector sharedDirector] resume];
     }
-    
     
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"startScene"]];
 }
