@@ -433,7 +433,7 @@
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					B77F1B2D17B978D7009739AE = {
-						DevelopmentTeam = SBVP8ED765;
+						DevelopmentTeam = ALVVSFF263;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -662,7 +662,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = MoleculeMash;
-				PROVISIONING_PROFILE = "098B0293-C31E-46A6-BA31-372DCC7A8CEA";
+				PROVISIONING_PROFILE = "f75829fe-1f96-4a58-948d-80868f5a0060";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -695,7 +695,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = MoleculeMash;
-				PROVISIONING_PROFILE = "098B0293-C31E-46A6-BA31-372DCC7A8CEA";
+				PROVISIONING_PROFILE = "f75829fe-1f96-4a58-948d-80868f5a0060";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
